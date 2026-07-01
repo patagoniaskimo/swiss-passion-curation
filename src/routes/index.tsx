@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import heroMountain from "@/assets/hero-mountain.jpg";
+import heroMountainAsset from "@/assets/hero-mountain.jpg.asset.json";
+const heroMountain = heroMountainAsset.url;
 import founderVerbier from "@/assets/founder-verbier.jpg";
 import founderBern from "@/assets/founder-bern.jpg";
 import productSkis from "@/assets/product-skis.jpg";
@@ -169,7 +170,7 @@ function Hero() {
             className="aspect-[16/10] w-full object-cover md:aspect-[21/9]"
           />
           <figcaption className="mt-3 flex flex-wrap items-center justify-between gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-            <span>Fig. 01 — Ascenso al amanecer, Verbier</span>
+            <span>Fig. 01 — Cerro Fitz Roy, Patagonia</span>
             <span>Foto: Archivo Patagonia SkiMo</span>
           </figcaption>
         </figure>
