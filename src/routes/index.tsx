@@ -4,9 +4,13 @@ import heroMountainAsset from "@/assets/hero-mountain.jpg.asset.json";
 const heroMountain = heroMountainAsset.url;
 import founderVerbier from "@/assets/founder-verbier.jpg";
 import founderBern from "@/assets/founder-bern.jpg";
-import productSkis from "@/assets/product-skis.jpg";
-import productBoots from "@/assets/product-boots.jpg";
-import productSplitboard from "@/assets/product-splitboard.jpg";
+import product9 from "@/assets/product-9.png.asset.json";
+import product10 from "@/assets/product-10.png.asset.json";
+import product11 from "@/assets/product-11.png.asset.json";
+import product12 from "@/assets/product-12.png.asset.json";
+import product13 from "@/assets/product-13.png.asset.json";
+import product14 from "@/assets/product-14.png.asset.json";
+import product15 from "@/assets/product-15.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
