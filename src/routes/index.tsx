@@ -405,9 +405,97 @@ function Brands() {
 
 function Products() {
   const products = [
-    { img: productSkis, cat: "Esquís", name: "Movement Alp Tracks", spec: "Peso 1180 g · 85 mm waist · 162–178" },
-    { img: productBoots, cat: "Botas", name: "Touring Boot Series", spec: "Walk mode · Grilamid shell · Made in Italy" },
-    { img: productSplitboard, cat: "Splitboard", name: "Mendiboard Aparra", spec: "Núcleo de álamo · Base sinterizada · 158–164" },
+    {
+      img: product9.url,
+      cat: "Esquís",
+      name: "Movement Session 90",
+      desc: "Un all-mountain versátil, pensado para esquiadoras que buscan agilidad en pista y confianza fuera de ella. Ligero, tolerante y divertido en cualquier condición.",
+      specs: [
+        { k: "Waist", v: "90 mm" },
+        { k: "Largos", v: "155 / 163 / 171 cm" },
+        { k: "Radio", v: "16 m @ 171" },
+        { k: "Núcleo", v: "Paulownia + Karuba" },
+      ],
+      price: "USD 890",
+    },
+    {
+      img: product10.url,
+      cat: "Esquís",
+      name: "Movement Session 95",
+      desc: "El equilibrio perfecto entre ski de resort y freeride ligero. Estable a alta velocidad, con buena flotación en nieve fresca.",
+      specs: [
+        { k: "Waist", v: "95 mm" },
+        { k: "Largos", v: "163 / 171 / 178 cm" },
+        { k: "Radio", v: "17 m @ 178" },
+        { k: "Núcleo", v: "Paulownia + fibra" },
+      ],
+      price: "USD 940",
+    },
+    {
+      img: product11.url,
+      cat: "Esquís",
+      name: "Movement Session 95 W",
+      desc: "Versión all-mountain de gran rango. Diseño elegante para quienes esquían todos los días y quieren un solo ski para todo.",
+      specs: [
+        { k: "Waist", v: "95 mm" },
+        { k: "Largos", v: "163 / 170 / 177 cm" },
+        { k: "Radio", v: "17 m @ 177" },
+        { k: "Núcleo", v: "Karuba light" },
+      ],
+      price: "USD 940",
+    },
+    {
+      img: product12.url,
+      cat: "Esquís",
+      name: "Movement Sequence 92",
+      desc: "Un freeride reactivo y preciso. Pensado para líneas técnicas y nieve variable de la cordillera patagónica.",
+      specs: [
+        { k: "Waist", v: "92 mm" },
+        { k: "Largos", v: "165 / 173 / 180 cm" },
+        { k: "Radio", v: "18 m @ 180" },
+        { k: "Núcleo", v: "Poplar + Titanal" },
+      ],
+      price: "USD 1.020",
+    },
+    {
+      img: product13.url,
+      cat: "Esquís",
+      name: "Movement Sequence 98",
+      desc: "Más ancho, más flotador. Ideal para días de nieve profunda sin renunciar a la agilidad en el ascenso.",
+      specs: [
+        { k: "Waist", v: "98 mm" },
+        { k: "Largos", v: "170 / 178 / 185 cm" },
+        { k: "Radio", v: "19 m @ 185" },
+        { k: "Núcleo", v: "Poplar + Titanal" },
+      ],
+      price: "USD 1.080",
+    },
+    {
+      img: product14.url,
+      cat: "Esquís de travesía",
+      name: "Movement Alp Tracks 95",
+      desc: "Referencia del ski touring ligero. Construcción en carbono para ascensos largos y descensos comprometidos.",
+      specs: [
+        { k: "Waist", v: "95 mm" },
+        { k: "Peso", v: "1.190 g @ 170" },
+        { k: "Largos", v: "162 / 170 / 178 cm" },
+        { k: "Núcleo", v: "Karuba + carbono" },
+      ],
+      price: "USD 1.240",
+    },
+    {
+      img: product15.url,
+      cat: "Splitboard",
+      name: "Mendiboard Split",
+      desc: "Splitboard artesanal español para acceder al backcountry patagónico. Perfil directional para máxima estabilidad en descenso.",
+      specs: [
+        { k: "Largos", v: "158 / 162 cm" },
+        { k: "Perfil", v: "Directional Rocker" },
+        { k: "Núcleo", v: "Álamo + bambú" },
+        { k: "Base", v: "Sinterizada" },
+      ],
+      price: "USD 1.180",
+    },
   ];
   return (
     <section id="selection" className="border-b border-border">
@@ -417,29 +505,44 @@ function Products() {
             <SectionLabel n="VII" label="Selección destacada" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            Una lista corta. Cada pieza elegida a propósito.
+            Siete piezas. Cada una elegida a propósito.
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-10 md:mt-20 md:grid-cols-3 md:gap-8">
+        <div className="mt-14 grid grid-cols-1 gap-10 md:mt-20 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {products.map((p) => (
-            <article key={p.name} className="flex flex-col">
-              <div className="overflow-hidden bg-secondary">
+            <article key={p.name} className="flex flex-col border-t border-foreground pt-6">
+              <div className="flex items-baseline justify-between">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{p.cat}</span>
+                <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
+              </div>
+              <div className="mt-6 overflow-hidden bg-secondary">
                 <img
                   src={p.img}
                   alt={p.name}
                   width={1200}
                   height={1500}
                   loading="lazy"
-                  className="aspect-[4/5] w-full object-cover"
+                  className="aspect-[4/5] w-full object-contain"
                 />
               </div>
+              <h3 className="mt-6 text-[22px] font-bold tracking-tighter md:text-[24px]">{p.name}</h3>
+              <p className="mt-3 text-[14px] leading-[1.55] text-foreground/75">{p.desc}</p>
+
+              <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 border-t border-border pt-4 text-[12px]">
+                {p.specs.map((s) => (
+                  <div key={s.k} className="flex flex-col">
+                    <dt className="font-semibold uppercase tracking-[0.14em] text-muted-foreground">{s.k}</dt>
+                    <dd className="mt-0.5 font-medium">{s.v}</dd>
+                  </div>
+                ))}
+              </dl>
+
               <div className="mt-5 flex items-baseline justify-between border-t border-foreground pt-4">
-                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{p.cat}</span>
-                <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
+                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Precio</span>
+                <span className="text-[20px] font-bold tracking-tighter">{p.price}</span>
               </div>
-              <h3 className="mt-3 text-[22px] font-bold tracking-tighter md:text-[24px]">{p.name}</h3>
-              <p className="mt-2 text-[13px] text-muted-foreground">{p.spec}</p>
+
               <div className="mt-5 flex flex-wrap gap-3">
                 <a
                   href={WHATSAPP_URL}
@@ -447,13 +550,7 @@ function Products() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 bg-foreground px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-swiss-red"
                 >
-                  <WhatsAppIcon className="h-3.5 w-3.5" /> Preguntar por WhatsApp
-                </a>
-                <a
-                  href="#"
-                  className="inline-flex items-center gap-2 border border-foreground px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background"
-                >
-                  Saber más
+                  <WhatsAppIcon className="h-3.5 w-3.5" /> Consultar
                 </a>
               </div>
             </article>
