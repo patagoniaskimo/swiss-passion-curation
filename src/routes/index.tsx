@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import heroMountain from "@/assets/hero-mountain.jpg";
+import heroMountainAsset from "@/assets/hero-mountain.jpg.asset.json";
+const heroMountain = heroMountainAsset.url;
 import founderVerbier from "@/assets/founder-verbier.jpg";
 import founderBern from "@/assets/founder-bern.jpg";
 import productSkis from "@/assets/product-skis.jpg";
