@@ -11,6 +11,10 @@ import product12 from "@/assets/product-12.png.asset.json";
 import product13 from "@/assets/product-13.png.asset.json";
 import product14 from "@/assets/product-14.png.asset.json";
 import product15 from "@/assets/product-15.png.asset.json";
+import product16 from "@/assets/product-16.png.asset.json";
+import product17 from "@/assets/product-17.png.asset.json";
+import product18 from "@/assets/product-18.png.asset.json";
+import product19 from "@/assets/product-19.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -495,6 +499,58 @@ function Products() {
         { k: "Base", v: "Sinterizada" },
       ],
       price: "USD 1.180",
+    },
+    {
+      img: product16.url,
+      cat: "Botas",
+      name: "Movement Freetour Boot W",
+      desc: "Bota de travesía femenina, ligera y precisa. Modo caminata amplio para ascensos largos y flex sólido para descensos comprometidos.",
+      specs: [
+        { k: "Flex", v: "110" },
+        { k: "Shell", v: "Grilamid" },
+        { k: "Rango caminata", v: "60°" },
+        { k: "Peso", v: "1.150 g" },
+      ],
+      price: "USD 720",
+    },
+    {
+      img: product17.url,
+      cat: "Botas",
+      name: "Movement Freetour Boot",
+      desc: "Referencia freetour: rendimiento en bajada sin sacrificar el ascenso. Construcción Grilamid y cierre rápido para transiciones eficientes.",
+      specs: [
+        { k: "Flex", v: "120" },
+        { k: "Shell", v: "Grilamid" },
+        { k: "Rango caminata", v: "60°" },
+        { k: "Peso", v: "1.290 g" },
+      ],
+      price: "USD 780",
+    },
+    {
+      img: product18.url,
+      cat: "Fijaciones",
+      name: "PLUM Pin Tech",
+      desc: "Fijación de inserts francesa, ultraligera y confiable. Para quienes priorizan el ascenso y buscan máxima eficiencia en la montaña.",
+      specs: [
+        { k: "Tipo", v: "Pin / Tech" },
+        { k: "Peso", v: "365 g / par" },
+        { k: "Din", v: "5 – 10" },
+        { k: "Elevadores", v: "2 posiciones" },
+      ],
+      price: "USD 560",
+    },
+    {
+      img: product19.url,
+      cat: "Fijaciones splitboard",
+      name: "Splitboard Binding",
+      desc: "Fijación splitboard con highback reforzado y placa de aluminio. Transición rápida entre modo ascenso y descenso.",
+      specs: [
+        { k: "Tipo", v: "Splitboard" },
+        { k: "Material", v: "Aluminio + composite" },
+        { k: "Talles", v: "S / M / L" },
+        { k: "Peso", v: "1.750 g / par" },
+      ],
+      price: "USD 640",
     },
   ];
   return (
