@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Patagonia SkiMo — European mountain equipment for Patagonia" },
+      { title: "Patagonia SkiMo — Equipamiento de montaña europeo para Patagonia" },
       {
         name: "description",
         content:
-          "Two Argentine friends living in Switzerland curate premium ski touring, splitboard and freeride equipment from Europe for Argentina.",
+          "Dos amigos argentinos viviendo en Suiza curan equipamiento premium de ski touring, splitboard y freeride de Europa para Argentina.",
       },
       { name: "author", content: "Patagonia SkiMo" },
-      { property: "og:title", content: "Patagonia SkiMo — European mountain equipment for Patagonia" },
+      { property: "og:title", content: "Patagonia SkiMo — Equipamiento de montaña europeo para Patagonia" },
       {
         property: "og:description",
         content:
-          "Curated premium mountain equipment sourced across Europe, brought to Argentina. Ski touring, splitboard, freeride.",
+          "Equipamiento de montaña premium seleccionado en Europa, llevado a Argentina. Ski touring, splitboard, freeride.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -112,7 +112,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <HeadContent />
       </head>
@@ -134,3 +134,5 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+
+
