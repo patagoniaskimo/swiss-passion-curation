@@ -170,7 +170,7 @@ function Hero() {
             className="aspect-[16/10] w-full object-cover md:aspect-[21/9]"
           />
           <figcaption className="mt-3 flex flex-wrap items-center justify-between gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-            <span>Fig. 01 — Ascenso al amanecer, Verbier</span>
+            <span>Fig. 01 — Cerro Fitz Roy, Patagonia</span>
             <span>Foto: Archivo Patagonia SkiMo</span>
           </figcaption>
         </figure>
