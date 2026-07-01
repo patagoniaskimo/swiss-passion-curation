@@ -46,11 +46,11 @@ function Index() {
 function Nav() {
   const [open, setOpen] = useState(false);
   const links = [
-    { label: "Approach", href: "#approach" },
-    { label: "Founders", href: "#founders" },
-    { label: "Brands", href: "#brands" },
-    { label: "Selection", href: "#selection" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Enfoque", href: "#approach" },
+    { label: "Fundadores", href: "#founders" },
+    { label: "Marcas", href: "#brands" },
+    { label: "Selección", href: "#selection" },
+    { label: "Preguntas frecuentes", href: "#faq" },
   ];
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
@@ -58,7 +58,7 @@ function Nav() {
         <a href="#top" className="flex items-baseline gap-2">
           <span className="text-[15px] font-bold tracking-tighter">Patagonia SkiMo</span>
           <span className="hidden text-[11px] uppercase tracking-[0.16em] text-muted-foreground sm:inline">
-            EST. Switzerland
+            DESDE SUIZA
           </span>
         </a>
         <nav className="hidden items-center gap-8 md:flex">
@@ -82,7 +82,7 @@ function Nav() {
             <WhatsAppIcon /> WhatsApp
           </a>
         </div>
-        <button className="md:hidden" aria-label="Menu" onClick={() => setOpen((v) => !v)}>
+        <button className="md:hidden" aria-label="Menú" onClick={() => setOpen((v) => !v)}>
           <div className="flex h-10 w-10 flex-col items-center justify-center gap-[5px]">
             <span className="block h-[1.5px] w-6 bg-foreground" />
             <span className="block h-[1.5px] w-6 bg-foreground" />
@@ -103,7 +103,7 @@ function Nav() {
               rel="noreferrer"
               className="mt-2 inline-flex items-center justify-center gap-2 bg-foreground px-4 py-3 text-[12px] font-semibold uppercase tracking-[0.14em] text-background"
             >
-              <WhatsAppIcon /> Talk on WhatsApp
+              <WhatsAppIcon /> Hablar por WhatsApp
             </a>
           </div>
         </div>
@@ -120,25 +120,25 @@ function Hero() {
           <div className="col-span-12 flex items-center gap-3 md:col-span-6">
             <span className="inline-block h-2 w-2 bg-swiss-red" aria-hidden />
             <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              N°01 · From Switzerland to Argentina
+              N°01 · De Suiza a Argentina
             </span>
           </div>
           <div className="col-span-12 md:col-span-6 md:text-right">
             <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              Winter 2026 — Ski touring / Splitboard / Freeride
+              Invierno 2026 — Ski touring / Splitboard / Freeride
             </span>
           </div>
         </div>
 
         <h1 className="mt-10 max-w-[18ch] text-[44px] font-bold leading-[0.95] tracking-tighter sm:text-6xl md:mt-14 md:text-[104px] md:leading-[0.92]">
-          European mountain equipment{" "}
-          <span className="text-muted-foreground">for Patagonia.</span>
+          Equipamiento de montaña europeo{" "}
+          <span className="text-muted-foreground">para Patagonia.</span>
         </h1>
 
         <div className="mt-10 grid grid-cols-12 gap-6 md:mt-16">
           <p className="col-span-12 max-w-[52ch] text-[17px] leading-[1.5] text-foreground/80 md:col-span-7 md:text-[20px]">
-            We live in Switzerland and spend the year sourcing premium mountain equipment across Europe to bring
-            carefully selected products to Argentina.
+            Vivimos en Suiza y pasamos el año buscando equipamiento premium de montaña en Europa para traer productos
+            cuidadosamente seleccionados a Argentina.
           </p>
           <div className="col-span-12 flex flex-wrap items-start gap-3 md:col-span-5 md:justify-end">
             <a
@@ -147,13 +147,13 @@ function Hero() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-foreground px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-swiss-red"
             >
-              <WhatsAppIcon /> Talk on WhatsApp
+              <WhatsAppIcon /> Hablar por WhatsApp
             </a>
             <a
               href="#selection"
               className="inline-flex items-center gap-2 border border-foreground px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background"
             >
-              Browse the Catalog
+              Ver la selección
             </a>
           </div>
         </div>
@@ -163,14 +163,14 @@ function Hero() {
         <figure className="relative overflow-hidden">
           <img
             src={heroMountain}
-            alt="Solitary ski tourer ascending an Alpine ridge at dawn"
+            alt="Esquiador de ski tour ascendiendo una arista alpina al amanecer"
             width={1920}
             height={1280}
             className="aspect-[16/10] w-full object-cover md:aspect-[21/9]"
           />
           <figcaption className="mt-3 flex flex-wrap items-center justify-between gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-            <span>Fig. 01 — Sunrise ascent, Verbier</span>
-            <span>Photo: Patagonia SkiMo Archive</span>
+            <span>Fig. 01 — Ascenso al amanecer, Verbier</span>
+            <span>Foto: Archivo Patagonia SkiMo</span>
           </figcaption>
         </figure>
       </div>
@@ -179,7 +179,7 @@ function Hero() {
 }
 
 function BeltStrip() {
-  const items = ["From Switzerland.", "To Argentina.", "Passion for the mountains."];
+  const items = ["De Suiza.", "A Argentina.", "Pasión por la montaña."];
   return (
     <section className="border-b border-border bg-secondary">
       <div className="container-editorial grid grid-cols-1 gap-8 py-10 md:grid-cols-3 md:gap-12 md:py-14">
@@ -198,19 +198,19 @@ function BeltStrip() {
 
 function Problem() {
   const items = [
-    { k: "01", t: "Buying the wrong ski", d: "Choosing the wrong equipment can mean spending thousands on something that doesn't fit your style." },
-    { k: "02", t: "Limited selection", d: "Many brands never reach Argentina. Premium products are difficult to find." },
-    { k: "03", t: "Too much information", d: "Specifications don't replace experience. People don't need more options — they need better guidance." },
+    { k: "01", t: "Comprar el ski equivocado", d: "Elegir mal el equipamiento puede significar gastar miles en algo que no se adapta a tu estilo." },
+    { k: "02", t: "Selección limitada", d: "Muchas marcas no llegan a Argentina. Los productos premium son difíciles de encontrar." },
+    { k: "03", t: "Demasiada información", d: "Las especificaciones no reemplazan la experiencia. La gente no necesita más opciones — necesita mejor guía." },
   ];
   return (
     <section id="approach" className="border-b border-border">
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="II" label="The Problem" />
+            <SectionLabel n="II" label="El problema" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[56px]">
-            Buying mountain equipment shouldn't be this difficult.
+            Comprar equipamiento de montaña no debería ser tan difícil.
           </h2>
         </div>
 
@@ -233,19 +233,19 @@ function Problem() {
 
 function Solution() {
   const cols = [
-    { k: "Search", d: "We constantly monitor opportunities across Europe. Manufacturers, distributors, ateliers, resort dealers." },
-    { k: "Select", d: "We only choose equipment we would personally use — on our own next line, on our own next ridge." },
-    { k: "Recommend", d: "We help every customer choose the right setup for their terrain, level and ambition." },
+    { k: "Buscar", d: "Monitoreamos oportunidades en toda Europa. Fabricantes, distribuidores, ateliers y tiendas de resorts." },
+    { k: "Seleccionar", d: "Solo elegimos equipamiento que usaríamos nosotros — en nuestra próxima línea, en nuestra próxima arista." },
+    { k: "Recomendar", d: "Ayudamos a cada cliente a elegir el equipo adecuado para su terreno, nivel y ambición." },
   ];
   return (
     <section className="border-b border-border bg-secondary">
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="III" label="Our Method" />
+            <SectionLabel n="III" label="Nuestro método" />
           </div>
           <h2 className="col-span-12 max-w-[18ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[56px]">
-            We already did the research.
+            Ya hicimos la investigación.
           </h2>
         </div>
 
@@ -253,7 +253,7 @@ function Solution() {
           {cols.map((c, i) => (
             <div key={c.k} className="bg-secondary p-8 md:p-10">
               <div className="flex items-baseline justify-between">
-                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">Step 0{i + 1}</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">Paso 0{i + 1}</span>
                 <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">{String(i + 1).padStart(2, "0")} / 03</span>
               </div>
               <h3 className="mt-8 text-[34px] font-bold tracking-tighter md:text-[44px]">{c.k}</h3>
@@ -272,20 +272,20 @@ function TrustEditorial() {
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="IV" label="Why Trust Us" />
+            <SectionLabel n="IV" label="Por qué confiar" />
           </div>
           <div className="col-span-12 md:col-span-8">
             <p className="text-[28px] font-bold leading-[1.1] tracking-tighter md:text-[52px]">
-              We choose every product as if it were for our own next trip.
+              Elegimos cada producto como si fuera para nuestro próximo viaje.
             </p>
             <div className="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-2 md:gap-12">
               <p className="text-[15px] leading-[1.65] text-foreground/75 md:text-[17px]">
-                We don't build a catalog first. We build criteria first. Every product enters Patagonia SkiMo only after
-                careful evaluation — weight, materials, real-world performance, and long-term reliability on the mountain.
+                No armamos un catálogo primero. Armamos criterios primero. Cada producto entra a Patagonia SkiMo solo después de
+                una evaluación cuidadosa — peso, materiales, rendimiento real y confiabilidad a largo plazo en la montaña.
               </p>
               <p className="text-[15px] leading-[1.65] text-foreground/75 md:text-[17px]">
-                That means our recommendations are based on experience, not marketing. We test what we sell, we ride what
-                we recommend, and we stand behind every setup that leaves our hands.
+                Eso significa que nuestras recomendaciones se basan en experiencia, no en marketing. Probamos lo que vendemos, esquiamos lo que
+                recomendamos y respondemos por cada equipo que sale de nuestras manos.
               </p>
             </div>
           </div>
@@ -297,18 +297,18 @@ function TrustEditorial() {
 
 function Founders() {
   const founders = [
-    { img: founderVerbier, name: "Founder", city: "Verbier, CH", copy: "Based in the heart of the Alps. Ski touring and freeride, year after year on the same lines and always looking for the next one." },
-    { img: founderBern, name: "Founder", city: "Bern, CH", copy: "Based in the Swiss capital, closer to the workshops and distributors. Splitboard, backcountry, and long approaches." },
+    { img: founderVerbier, name: "Fundador", city: "Verbier, CH", copy: "Radicado en el corazón de los Alpes. Ski touring y freeride, año tras año en las mismas líneas y siempre buscando la siguiente." },
+    { img: founderBern, name: "Fundador", city: "Bern, CH", copy: "Radicado en la capital suiza, cerca de los talleres y distribuidores. Splitboard, backcountry y largos acercamientos." },
   ];
   return (
     <section id="founders" className="border-b border-border bg-secondary">
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="V" label="Who We Are" />
+            <SectionLabel n="V" label="Quiénes somos" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            Two Argentine friends. One passion. One vantage point on the Alps.
+            Dos amigos argentinos. Una pasión. Un punto de vista en los Alpes.
           </h2>
         </div>
 
@@ -335,7 +335,7 @@ function Founders() {
         <div className="mt-16 border-t border-foreground pt-8">
           <div className="grid grid-cols-12 items-center gap-4">
             <div className="col-span-5 md:col-span-3">
-              <p className="text-[13px] font-bold uppercase tracking-[0.16em]">Switzerland</p>
+              <p className="text-[13px] font-bold uppercase tracking-[0.16em]">Suiza</p>
               <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">46.9° N</p>
             </div>
             <div className="col-span-2 md:col-span-6" aria-hidden>
@@ -358,22 +358,22 @@ function Founders() {
 
 function Brands() {
   const brands = [
-    { name: "Movement", note: "Swiss skis" },
-    { name: "Movement Boots", note: "Made in Italy" },
-    { name: "Colltex", note: "Swiss skins" },
-    { name: "Marker", note: "Bindings" },
-    { name: "PLUM", note: "French bindings" },
-    { name: "Mendiboard", note: "Spanish splitboards" },
+    { name: "Movement", note: "Esquís suizos" },
+    { name: "Movement Boots", note: "Hecho en Italia" },
+    { name: "Colltex", note: "Pieles suizas" },
+    { name: "Marker", note: "Fijaciones" },
+    { name: "PLUM", note: "Fijaciones francesas" },
+    { name: "Mendiboard", note: "Splitboards españoles" },
   ];
   return (
     <section id="brands" className="border-b border-border">
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="VI" label="Our Brands" />
+            <SectionLabel n="VI" label="Nuestras marcas" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            A curated collection, not a catalog.
+            Una colección curada, no un catálogo.
           </h2>
         </div>
 
@@ -400,19 +400,19 @@ function Brands() {
 
 function Products() {
   const products = [
-    { img: productSkis, cat: "Skis", name: "Movement Alp Tracks", spec: "Weight 1180 g · 85 mm waist · 162–178" },
-    { img: productBoots, cat: "Boots", name: "Touring Boot Series", spec: "Walk mode · Grilamid shell · Made in Italy" },
-    { img: productSplitboard, cat: "Splitboard", name: "Mendiboard Aparra", spec: "Poplar core · Sintered base · 158–164" },
+    { img: productSkis, cat: "Esquís", name: "Movement Alp Tracks", spec: "Peso 1180 g · 85 mm waist · 162–178" },
+    { img: productBoots, cat: "Botas", name: "Touring Boot Series", spec: "Walk mode · Grilamid shell · Made in Italy" },
+    { img: productSplitboard, cat: "Splitboard", name: "Mendiboard Aparra", spec: "Núcleo de álamo · Base sinterizada · 158–164" },
   ];
   return (
     <section id="selection" className="border-b border-border">
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="VII" label="Featured Selection" />
+            <SectionLabel n="VII" label="Selección destacada" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            A short list. Every piece chosen on purpose.
+            Una lista corta. Cada pieza elegida a propósito.
           </h2>
         </div>
 
@@ -442,13 +442,13 @@ function Products() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 bg-foreground px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-swiss-red"
                 >
-                  <WhatsAppIcon className="h-3.5 w-3.5" /> Ask on WhatsApp
+                  <WhatsAppIcon className="h-3.5 w-3.5" /> Preguntar por WhatsApp
                 </a>
                 <a
                   href="#"
                   className="inline-flex items-center gap-2 border border-foreground px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background"
                 >
-                  Learn More
+                  Saber más
                 </a>
               </div>
             </article>
@@ -461,20 +461,20 @@ function Products() {
 
 function HowItWorks() {
   const steps = [
-    { t: "Tell us where and how you ski.", n: "01" },
-    { t: "We recommend the right equipment.", n: "02" },
-    { t: "Reserve your setup.", n: "03" },
-    { t: "Receive it in Argentina.", n: "04" },
+    { t: "Contanos dónde y cómo esquías.", n: "01" },
+    { t: "Te recomendamos el equipo adecuado.", n: "02" },
+    { t: "Reservá tu equipo.", n: "03" },
+    { t: "Recibilo en Argentina.", n: "04" },
   ];
   return (
     <section className="border-b border-border bg-secondary">
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="VIII" label="How It Works" />
+            <SectionLabel n="VIII" label="Cómo funciona" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            Four steps, one honest conversation.
+            Cuatro pasos, una conversación honesta.
           </h2>
         </div>
 
@@ -486,7 +486,7 @@ function HowItWorks() {
                 i !== steps.length - 1 ? "md:border-r" : ""
               }`}
             >
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-swiss-red">Step {s.n}</span>
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-swiss-red">Paso {s.n}</span>
               <p className="mt-8 max-w-[22ch] text-[20px] font-bold tracking-tighter md:text-[22px]">{s.t}</p>
             </li>
           ))}
@@ -502,15 +502,15 @@ function LocalPresence() {
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="IX" label="Local Presence" />
+            <SectionLabel n="IX" label="Presencia local" />
           </div>
           <div className="col-span-12 md:col-span-8">
             <h2 className="max-w-[18ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:text-[52px]">
-              Available in Argentina.
+              Disponible en Argentina.
             </h2>
             <p className="mt-8 max-w-[52ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[17px]">
-              Patagonia SkiMo keeps stock in Argentina. Winter 2026 collaborations in San Martín de los Andes and El
-              Chaltén — so you can see, try and pick up your setup on the ground, close to the lines you plan to ride.
+              Patagonia SkiMo mantiene stock en Argentina. Colaboraciones Invierno 2026 en San Martín de los Andes y El
+              Chaltén — para que puedas ver, probar y retirar tu equipo en el lugar, cerca de las líneas que querés hacer.
             </p>
             <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
@@ -520,7 +520,7 @@ function LocalPresence() {
                 <div key={p.c} className="border-t border-foreground pt-4">
                   <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">{p.c}</p>
                   <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                    {p.r} · Winter 2026
+                    {p.r} · Invierno 2026
                   </p>
                 </div>
               ))}
@@ -534,12 +534,12 @@ function LocalPresence() {
 
 function FAQ() {
   const items = [
-    { q: "How do I choose my ski?", a: "Tell us where you ski, how you ski, and what you want to do next season. We match terrain, style and weight — not marketing categories." },
-    { q: "Which size should I buy?", a: "Sizing depends on your height, weight, skill and terrain. Send us the details on WhatsApp and we'll walk you through it." },
-    { q: "I'm just getting started. What do I need?", a: "A setup that grows with you: forgiving skis, a reliable boot, a binding that won't hold you back. We'll build it around your budget." },
-    { q: "Do you have stock in Argentina?", a: "Yes. We hold a curated stock in Argentina and receive selected orders directly from Europe every season." },
-    { q: "Do your products have warranty?", a: "Every product carries the manufacturer's official warranty. We handle the process with the brand on your behalf." },
-    { q: "Can you help me choose?", a: "That's the whole point. Start a WhatsApp conversation and we'll take it from there." },
+    { q: "¿Cómo elijo mi ski?", a: "Contanos dónde esquías, cómo esquías y qué querés hacer la próxima temporada. Vinculamos terreno, estilo y peso — no categorías de marketing." },
+    { q: "¿Qué tamaño me conviene?", a: "El tamaño depende de tu altura, peso, habilidad y terreno. Mandanos los datos por WhatsApp y te guiamos paso a paso." },
+    { q: "Recién empiezo. ¿Qué necesito?", a: "Un equipo que crezca con vos: esquís permisivos, una bota confiable y una fijación que no te limite. Lo armamos alrededor de tu presupuesto." },
+    { q: "¿Tienen stock en Argentina?", a: "Sí. Mantenemos un stock curado en Argentina y recibimos pedidos seleccionados directamente de Europa cada temporada." },
+    { q: "¿Los productos tienen garantía?", a: "Cada producto lleva la garantía oficial del fabricante. Nosotros gestionamos el proceso con la marca por vos." },
+    { q: "¿Me ayudan a elegir?", a: "De eso se trata. Iniciá una conversación por WhatsApp y nosotros nos ocupamos del resto." },
   ];
   const [open, setOpen] = useState<number | null>(0);
   return (
@@ -547,10 +547,10 @@ function FAQ() {
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="X" label="FAQ" />
+            <SectionLabel n="X" label="Preguntas frecuentes" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            Questions we answer every week.
+            Preguntas que respondemos todas las semanas.
           </h2>
         </div>
 
@@ -592,12 +592,12 @@ function FinalCTA() {
   return (
     <section className="border-b border-border">
       <div className="container-editorial py-24 text-center md:py-40">
-        <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">— Talk to us</span>
+        <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">— Hablemos</span>
         <h2 className="mx-auto mt-8 max-w-[18ch] text-[36px] font-bold leading-[1] tracking-tighter md:text-[80px]">
-          Still not sure which setup is right for you?
+          ¿Todavía no sabés qué equipo te conviene?
         </h2>
         <p className="mx-auto mt-8 max-w-[42ch] text-[16px] leading-[1.6] text-foreground/75 md:text-[19px]">
-          Tell us where you ski. We'll help you choose the right equipment.
+          Contanos dónde esquías. Te ayudamos a elegir el equipo adecuado.
         </p>
         <div className="mt-12">
           <a
@@ -606,7 +606,7 @@ function FinalCTA() {
             rel="noreferrer"
             className="inline-flex items-center gap-3 bg-foreground px-8 py-5 text-[13px] font-semibold uppercase tracking-[0.16em] text-background transition-colors hover:bg-swiss-red"
           >
-            <WhatsAppIcon className="h-5 w-5" /> Talk on WhatsApp
+            <WhatsAppIcon className="h-5 w-5" /> Hablar por WhatsApp
           </a>
         </div>
       </div>
@@ -622,11 +622,11 @@ function Footer() {
           <div className="col-span-12 md:col-span-6">
             <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">Patagonia SkiMo</p>
             <p className="mt-3 text-[12px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              From Switzerland. To Argentina. Passion for the mountains.
+              De Suiza. A Argentina. Pasión por la montaña.
             </p>
           </div>
           <div className="col-span-6 md:col-span-3">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Contact</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Contacto</p>
             <ul className="mt-4 space-y-2 text-[14px]">
               <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:underline">WhatsApp</a></li>
               <li><a href="mailto:hola@patagoniaskimo.com" className="hover:underline">hola@patagoniaskimo.com</a></li>
@@ -634,10 +634,10 @@ function Footer() {
             </ul>
           </div>
           <div className="col-span-6 md:col-span-3">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Locations</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Ubicaciones</p>
             <ul className="mt-4 space-y-2 text-[14px]">
-              <li>Verbier, Switzerland</li>
-              <li>Bern, Switzerland</li>
+              <li>Verbier, Suiza</li>
+              <li>Berna, Suiza</li>
               <li>San Martín de los Andes, AR</li>
               <li>El Chaltén, AR</li>
             </ul>
@@ -645,7 +645,7 @@ function Footer() {
         </div>
         <div className="mt-14 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-6 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
           <span>© {new Date().getFullYear()} Patagonia SkiMo</span>
-          <span>N°01 · Winter 2026 Edition</span>
+          <span>N°01 · Edición Invierno 2026</span>
         </div>
       </div>
     </footer>
@@ -658,7 +658,7 @@ function WhatsAppFloating() {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noreferrer"
-      aria-label="Talk on WhatsApp"
+      aria-label="Hablar por WhatsApp"
       className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 bg-foreground px-5 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-background shadow-[0_10px_30px_-10px_rgba(0,0,0,0.4)] transition-colors hover:bg-swiss-red md:bottom-8 md:right-8"
     >
       <WhatsAppIcon className="h-4 w-4" />
