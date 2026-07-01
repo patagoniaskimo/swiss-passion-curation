@@ -11,6 +11,10 @@ import product12 from "@/assets/product-12.png.asset.json";
 import product13 from "@/assets/product-13.png.asset.json";
 import product14 from "@/assets/product-14.png.asset.json";
 import product15 from "@/assets/product-15.png.asset.json";
+import product16 from "@/assets/product-16.png.asset.json";
+import product17 from "@/assets/product-17.png.asset.json";
+import product18 from "@/assets/product-18.png.asset.json";
+import product19 from "@/assets/product-19.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
