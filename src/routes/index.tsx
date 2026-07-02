@@ -140,7 +140,7 @@ function Hero() {
           </div>
         </div>
 
-        <h1 className="mt-6 max-w-[18ch] text-[34px] font-bold leading-[0.95] tracking-tighter sm:text-[42px] md:mt-8 md:text-[64px] md:leading-[0.92]">
+        <h1 className="mt-6 max-w-[18ch] text-[32px] font-bold leading-[0.95] tracking-tighter sm:text-[40px] md:mt-8 md:text-[56px] md:leading-[0.92]">
           Equipamiento para&nbsp;
           <br />
           <span className="text-muted-foreground">Ski de travesía.</span>
