@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import heroMountainAsset from "@/assets/hero-mountain.jpg.asset.json";
-const heroMountain = heroMountainAsset.url;
+import logoAsset from "@/assets/patagonia-skimo-logo.png.asset.json";
+const logoUrl = logoAsset.url;
 import product9 from "@/assets/product-9.png.asset.json";
 import product10 from "@/assets/product-10.png.asset.json";
 import product11 from "@/assets/product-11.png.asset.json";
@@ -172,19 +172,15 @@ function Hero() {
       </div>
 
       <div className="container-editorial pb-10 md:pb-14">
-        <figure className="relative overflow-hidden">
+        <div className="flex items-center justify-center border border-border bg-background px-6 py-10 md:py-16">
           <img
-            src={heroMountain}
-            alt="Esquiador de ski tour ascendiendo una arista alpina al amanecer"
-            width={1920}
-            height={1280}
-            className="aspect-[16/10] w-full object-cover md:aspect-[21/9]"
+            src={logoUrl}
+            alt="Patagonia SkiMo"
+            width={1200}
+            height={600}
+            className="w-full max-w-2xl object-contain"
           />
-          <figcaption className="mt-3 flex flex-wrap items-center justify-between gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-            <span>Fig. 01 — Cerro Fitz Roy, Patagonia</span>
-            <span>Foto: Archivo Patagonia SkiMo</span>
-          </figcaption>
-        </figure>
+        </div>
       </div>
     </section>
   );
