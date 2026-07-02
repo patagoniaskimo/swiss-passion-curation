@@ -632,22 +632,16 @@ function FAQ() {
               <div key={it.q} className="border-t border-foreground last:border-b">
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-6 py-6 text-left md:py-8"
+                  className="flex w-full items-center justify-between gap-4 py-6 text-left md:py-8"
                 >
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
                   <span className="text-[18px] font-bold tracking-tighter md:text-[24px]">{it.q}</span>
-                  <span className="relative inline-block h-4 w-4 shrink-0" aria-hidden>
-                    <span className="absolute left-1/2 top-0 h-4 w-[1.5px] -translate-x-1/2 bg-foreground" style={{ opacity: isOpen ? 0 : 1 }} />
-                    <span className="absolute left-0 top-1/2 h-[1.5px] w-4 -translate-y-1/2 bg-foreground" />
+                  <span className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.12em] text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline md:text-[12px]">
+                    {isOpen ? "Cerrar" : "Ver respuesta"}
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="grid grid-cols-[auto_1fr_auto] gap-6 pb-8">
-                    <span aria-hidden />
+                  <div className="pb-8">
                     <p className="max-w-[62ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">{it.a}</p>
-                    <span aria-hidden />
                   </div>
                 )}
               </div>
