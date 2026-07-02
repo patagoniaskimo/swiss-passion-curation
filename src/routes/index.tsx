@@ -2,8 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import heroMountainAsset from "@/assets/hero-mountain.jpg.asset.json";
 const heroMountain = heroMountainAsset.url;
-import founderVerbier from "@/assets/founder-verbier.jpg";
-import founderBern from "@/assets/founder-bern.jpg";
 import product9 from "@/assets/product-9.png.asset.json";
 import product10 from "@/assets/product-10.png.asset.json";
 import product11 from "@/assets/product-11.png.asset.json";
@@ -37,14 +35,13 @@ function Index() {
       <Hero />
       <BeltStrip />
       <Problem />
-      <Solution />
-      <TrustEditorial />
-      <Founders />
       <Brands />
       <Products />
       <HowItWorks />
       <LocalPresence />
       <FAQ />
+      <Solution />
+      <Founders />
       <FinalCTA />
       <Footer />
       <WhatsAppFloating />
@@ -55,11 +52,11 @@ function Index() {
 function Nav() {
   const [open, setOpen] = useState(false);
   const links = [
-    { label: "Enfoque", href: "#approach" },
-    { label: "Fundadores", href: "#founders" },
+    { label: "Productos", href: "#selection" },
     { label: "Marcas", href: "#brands" },
-    { label: "Selección", href: "#selection" },
+    { label: "Cómo funciona", href: "#how-it-works" },
     { label: "Preguntas frecuentes", href: "#faq" },
+    { label: "Nosotros", href: "#about" },
   ];
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
@@ -124,7 +121,7 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="container-editorial pt-14 pb-10 md:pt-24 md:pb-16">
+      <div className="container-editorial pt-10 pb-8 md:pt-16 md:pb-12">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 flex items-center gap-3 md:col-span-6">
             <span className="inline-block h-2 w-2 bg-swiss-red" aria-hidden />
@@ -139,28 +136,27 @@ function Hero() {
           </div>
         </div>
 
-        <h1 className="mt-10 max-w-[18ch] text-[44px] font-bold leading-[0.95] tracking-tighter sm:text-6xl md:mt-14 md:text-[104px] md:leading-[0.92]">
+        <h1 className="mt-8 max-w-[18ch] text-[40px] font-bold leading-[0.95] tracking-tighter sm:text-5xl md:mt-10 md:text-[80px] md:leading-[0.92]">
           Equipamiento de montaña europeo{" "}
           <span className="text-muted-foreground">para Patagonia.</span>
         </h1>
 
-        <div className="mt-10 grid grid-cols-12 gap-6 md:mt-16">
-          <p className="col-span-12 max-w-[52ch] text-[17px] leading-[1.5] text-foreground/80 md:col-span-7 md:text-[20px]">
-            Vivimos en Suiza y pasamos el año buscando equipamiento premium de montaña en Europa para traer productos
-            cuidadosamente seleccionados a Argentina.
+        <div className="mt-8 grid grid-cols-12 gap-6 md:mt-12">
+          <p className="col-span-12 max-w-[52ch] text-[16px] leading-[1.5] text-foreground/80 md:col-span-7 md:text-[18px]">
+            Equipamiento premium de montaña seleccionado en Europa y disponible en Argentina.
           </p>
           <div className="col-span-12 flex flex-wrap items-start gap-3 md:col-span-5 md:justify-end">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-swiss-red"
+              className="inline-flex items-center gap-2 bg-foreground px-5 py-3 text-[12px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-swiss-red"
             >
               <WhatsAppIcon /> Hablar por WhatsApp
             </a>
             <a
               href="#selection"
-              className="inline-flex items-center gap-2 border border-foreground px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background"
+              className="inline-flex items-center gap-2 border border-foreground px-5 py-3 text-[12px] font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background"
             >
               Ver la selección
             </a>
@@ -168,7 +164,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="container-editorial pb-14 md:pb-20">
+      <div className="container-editorial pb-10 md:pb-14">
         <figure className="relative overflow-hidden">
           <img
             src={heroMountain}
@@ -191,13 +187,13 @@ function BeltStrip() {
   const items = ["De Suiza.", "A Argentina.", "Pasión por la montaña."];
   return (
     <section className="border-b border-border bg-secondary">
-      <div className="container-editorial grid grid-cols-1 gap-8 py-10 md:grid-cols-3 md:gap-12 md:py-14">
+      <div className="container-editorial grid grid-cols-1 gap-6 py-6 md:grid-cols-3 md:gap-12 md:py-8">
         {items.map((t, i) => (
           <div key={t} className="flex items-baseline gap-4">
             <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
               0{i + 1}
             </span>
-            <p className="text-[22px] font-bold tracking-tighter md:text-[28px]">{t}</p>
+            <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">{t}</p>
           </div>
         ))}
       </div>
@@ -213,25 +209,25 @@ function Problem() {
   ];
   return (
     <section id="approach" className="border-b border-border">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-14 md:py-20">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="II" label="El problema" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[56px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[48px]">
             Comprar equipamiento de montaña no debería ser tan difícil.
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-10 md:mt-20 md:grid-cols-3 md:gap-12">
+        <div className="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-3 md:gap-10">
           {items.map((it) => (
-            <article key={it.k} className="border-t border-foreground pt-6">
+            <article key={it.k} className="border-t border-foreground pt-5">
               <div className="flex items-baseline justify-between">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Fig. {it.k}</span>
                 <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
               </div>
-              <h3 className="mt-5 text-[22px] font-bold tracking-tighter md:text-[26px]">{it.t}</h3>
-              <p className="mt-4 max-w-[42ch] text-[15px] leading-[1.55] text-foreground/75">{it.d}</p>
+              <h3 className="mt-4 text-[20px] font-bold tracking-tighter md:text-[24px]">{it.t}</h3>
+              <p className="mt-3 max-w-[42ch] text-[14px] leading-[1.55] text-foreground/75">{it.d}</p>
             </article>
           ))}
         </div>
@@ -242,31 +238,20 @@ function Problem() {
 
 function Solution() {
   const cols = [
-    { k: "Buscar", d: "Monitoreamos oportunidades en toda Europa. Fabricantes, distribuidores, ateliers y tiendas de resorts." },
-    { k: "Seleccionar", d: "Solo elegimos equipamiento que usaríamos nosotros — en nuestra próxima línea, en nuestra próxima arista." },
-    { k: "Recomendar", d: "Ayudamos a cada cliente a elegir el equipo adecuado para su terreno, nivel y ambición." },
+    { k: "Buscar", d: "Monitoreamos oportunidades en toda Europa." },
+    { k: "Seleccionar", d: "Solo elegimos equipamiento que usaríamos nosotros." },
+    { k: "Recomendar", d: "Ayudamos a cada cliente a elegir el equipo adecuado." },
   ];
   return (
-    <section className="border-b border-border bg-secondary">
-      <div className="container-editorial py-20 md:py-32">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="III" label="Nuestro método" />
-          </div>
-          <h2 className="col-span-12 max-w-[18ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[56px]">
-            Ya hicimos la investigación.
-          </h2>
-        </div>
-
-        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-foreground bg-foreground md:mt-20 md:grid-cols-3">
+    <section id="method" className="border-b border-border bg-secondary">
+      <div className="container-editorial py-12 md:py-16">
+        <SectionLabel n="VIII" label="Nuestro método" />
+        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
           {cols.map((c, i) => (
-            <div key={c.k} className="bg-secondary p-8 md:p-10">
-              <div className="flex items-baseline justify-between">
-                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">Paso 0{i + 1}</span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">{String(i + 1).padStart(2, "0")} / 03</span>
-              </div>
-              <h3 className="mt-8 text-[34px] font-bold tracking-tighter md:text-[44px]">{c.k}</h3>
-              <p className="mt-6 max-w-[38ch] text-[15px] leading-[1.55] text-foreground/75">{c.d}</p>
+            <div key={c.k} className="border-t border-foreground pt-5">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">Paso 0{i + 1}</span>
+              <h3 className="mt-4 text-[22px] font-bold tracking-tighter">{c.k}</h3>
+              <p className="mt-2 max-w-[38ch] text-[14px] leading-[1.5] text-foreground/75">{c.d}</p>
             </div>
           ))}
         </div>
@@ -275,91 +260,17 @@ function Solution() {
   );
 }
 
-function TrustEditorial() {
-  return (
-    <section className="border-b border-border">
-      <div className="container-editorial py-20 md:py-32">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="IV" label="Por qué confiar" />
-          </div>
-          <div className="col-span-12 md:col-span-8">
-            <p className="text-[28px] font-bold leading-[1.1] tracking-tighter md:text-[52px]">
-              Elegimos cada producto como si fuera para nuestro próximo viaje.
-            </p>
-            <div className="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-2 md:gap-12">
-              <p className="text-[15px] leading-[1.65] text-foreground/75 md:text-[17px]">
-                No armamos un catálogo primero. Armamos criterios primero. Cada producto entra a Patagonia SkiMo solo después de
-                una evaluación cuidadosa — peso, materiales, rendimiento real y confiabilidad a largo plazo en la montaña.
-              </p>
-              <p className="text-[15px] leading-[1.65] text-foreground/75 md:text-[17px]">
-                Eso significa que nuestras recomendaciones se basan en experiencia, no en marketing. Probamos lo que vendemos, esquiamos lo que
-                recomendamos y respondemos por cada equipo que sale de nuestras manos.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Founders() {
-  const founders = [
-    { img: founderVerbier, name: "Fundador", city: "Verbier, CH", copy: "Radicado en el corazón de los Alpes. Ski touring y freeride, año tras año en las mismas líneas y siempre buscando la siguiente." },
-    { img: founderBern, name: "Fundador", city: "Bern, CH", copy: "Radicado en la capital suiza, cerca de los talleres y distribuidores. Splitboard, backcountry y largos acercamientos." },
-  ];
   return (
-    <section id="founders" className="border-b border-border bg-secondary">
-      <div className="container-editorial py-20 md:py-32">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="V" label="Quiénes somos" />
-          </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            Dos amigos argentinos. Una pasión. Un punto de vista en los Alpes.
-          </h2>
-        </div>
-
-        <div className="mt-14 grid grid-cols-1 gap-10 md:mt-20 md:grid-cols-2 md:gap-12">
-          {founders.map((f) => (
-            <article key={f.city} className="grid grid-cols-1">
-              <img
-                src={f.img}
-                alt={`${f.name} — ${f.city}`}
-                width={1024}
-                height={1280}
-                loading="lazy"
-                className="aspect-[4/5] w-full object-cover grayscale"
-              />
-              <div className="mt-5 flex items-baseline justify-between border-t border-foreground pt-4">
-                <span className="text-[13px] font-semibold uppercase tracking-[0.16em]">{f.name}</span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{f.city}</span>
-              </div>
-              <p className="mt-4 max-w-[42ch] text-[15px] leading-[1.55] text-foreground/75">{f.copy}</p>
-            </article>
-          ))}
-        </div>
-
-        <div className="mt-16 border-t border-foreground pt-8">
-          <div className="grid grid-cols-12 items-center gap-4">
-            <div className="col-span-5 md:col-span-3">
-              <p className="text-[13px] font-bold uppercase tracking-[0.16em]">Suiza</p>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">46.9° N</p>
-            </div>
-            <div className="col-span-2 md:col-span-6" aria-hidden>
-              <div className="relative h-px w-full bg-foreground">
-                <span className="absolute -top-[3px] left-0 block h-2 w-2 rounded-full bg-foreground" />
-                <span className="absolute -top-[5px] left-1/2 block h-3 w-3 -translate-x-1/2 bg-swiss-red" />
-                <span className="absolute -top-[3px] right-0 block h-2 w-2 rounded-full bg-foreground" />
-              </div>
-            </div>
-            <div className="col-span-5 text-right md:col-span-3">
-              <p className="text-[13px] font-bold uppercase tracking-[0.16em]">Argentina</p>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">40.4° S</p>
-            </div>
-          </div>
-        </div>
+    <section id="about" className="border-b border-border">
+      <div className="container-editorial py-12 md:py-16">
+        <SectionLabel n="IX" label="Quiénes somos" />
+        <p className="mt-6 max-w-[70ch] text-[15px] leading-[1.65] text-foreground/80 md:text-[17px]">
+          <span className="font-bold text-foreground">Patagonia SkiMo</span> nace de dos amigos argentinos que viven en Suiza.
+          Pasamos el año buscando el mejor equipamiento de montaña en Europa para traerlo a Argentina.
+          Esquiamos lo que recomendamos y respondemos por cada equipo.
+        </p>
       </div>
     </section>
   );
