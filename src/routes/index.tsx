@@ -39,13 +39,11 @@ function Index() {
       <Nav />
       <Hero />
       <BeltStrip />
-      
       <Brands />
       <Products />
+      <LocalPresence />
       <FAQ />
       <HowItWorks />
-      <LocalPresence />
-
       <Solution />
       <Founders />
       <FinalCTA />
