@@ -126,7 +126,17 @@ function Hero() {
   return (
     <section id="top" className="border-b border-border">
       <div className="container-editorial pt-8 pb-6 md:pt-12 md:pb-8">
-        <div className="grid grid-cols-12 gap-6">
+        <div className="flex items-center justify-center px-4 py-2 md:py-4">
+          <img
+            src={logoUrl}
+            alt="Patagonia SkiMo"
+            width={1200}
+            height={600}
+            className="w-full max-w-xl object-contain"
+          />
+        </div>
+
+        <div className="mt-4 grid grid-cols-12 gap-6 md:mt-6">
           <div className="col-span-12 flex items-center gap-3 md:col-span-6">
             <span className="inline-block h-2 w-2 bg-swiss-red" aria-hidden />
             <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
@@ -166,18 +176,6 @@ function Hero() {
               Ver la selección
             </a>
           </div>
-        </div>
-      </div>
-
-      <div className="container-editorial pb-6 md:pb-8">
-        <div className="flex items-center justify-center px-4 py-4 md:py-6">
-          <img
-            src={logoUrl}
-            alt="Patagonia SkiMo"
-            width={1200}
-            height={600}
-            className="w-full max-w-xl object-contain"
-          />
         </div>
       </div>
     </section>
