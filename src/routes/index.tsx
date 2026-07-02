@@ -13,6 +13,11 @@ import product16 from "@/assets/product-16.png.asset.json";
 import product17 from "@/assets/product-17.png.asset.json";
 import product18 from "@/assets/product-18.png.asset.json";
 import product19 from "@/assets/product-19.png.asset.json";
+import brandMovement from "@/assets/brand-movement.png.asset.json";
+import brandColltex from "@/assets/brand-colltex.png.asset.json";
+import brandMarker from "@/assets/brand-marker.png.asset.json";
+import brandPlum from "@/assets/brand-plum.png.asset.json";
+import brandMendiboard from "@/assets/brand-mendiboard.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
