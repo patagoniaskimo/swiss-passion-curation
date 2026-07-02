@@ -174,19 +174,15 @@ function Hero() {
       </div>
 
       <div className="container-editorial pb-10 md:pb-14">
-        <figure className="relative overflow-hidden">
+        <div className="flex items-center justify-center border border-border bg-secondary px-6 py-16 md:py-24">
           <img
-            src={heroMountain}
-            alt="Esquiador de ski tour ascendiendo una arista alpina al amanecer"
-            width={1920}
-            height={1280}
-            className="aspect-[16/10] w-full object-cover md:aspect-[21/9]"
+            src={logoUrl}
+            alt="Patagonia SkiMo"
+            width={1200}
+            height={600}
+            className="w-full max-w-3xl object-contain"
           />
-          <figcaption className="mt-3 flex flex-wrap items-center justify-between gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
-            <span>Fig. 01 — Cerro Fitz Roy, Patagonia</span>
-            <span>Foto: Archivo Patagonia SkiMo</span>
-          </figcaption>
-        </figure>
+        </div>
       </div>
     </section>
   );
