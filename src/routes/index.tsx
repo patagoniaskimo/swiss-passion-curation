@@ -142,8 +142,9 @@ function Hero() {
         </div>
 
         <h1 className="mt-8 max-w-[18ch] text-[40px] font-bold leading-[0.95] tracking-tighter sm:text-5xl md:mt-10 md:text-[80px] md:leading-[0.92]">
-          Equipamiento de montaña europeo{" "}
-          <span className="text-muted-foreground">para Patagonia.</span>
+          Equipamiento para&nbsp;
+          <br />
+          <span className="text-muted-foreground">Ski de travesía.</span>
         </h1>
 
         <div className="mt-8 grid grid-cols-12 gap-6 md:mt-12">
