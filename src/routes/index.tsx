@@ -260,7 +260,6 @@ function Solution() {
   );
 }
 
-
 function Founders() {
   return (
     <section id="about" className="border-b border-border">
