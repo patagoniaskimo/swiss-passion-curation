@@ -467,7 +467,7 @@ function Products() {
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="IV" label="Selección destacada" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[44px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
             Once piezas. Cada una elegida a propósito.
           </h2>
         </div>
@@ -538,7 +538,7 @@ function HowItWorks() {
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="V" label="Cómo funciona" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[44px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
             Cuatro pasos, una conversación honesta.
           </h2>
         </div>
@@ -570,7 +570,7 @@ function LocalPresence() {
             <SectionLabel n="VI" label="Presencia local" />
           </div>
           <div className="col-span-12 md:col-span-8">
-            <h2 className="max-w-[18ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:text-[44px]">
+            <h2 className="max-w-[18ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
               Disponible en Argentina.
             </h2>
             <p className="mt-6 max-w-[52ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">
@@ -614,7 +614,7 @@ function FAQ() {
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="VII" label="Preguntas frecuentes" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[44px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
             Preguntas que respondemos todas las semanas.
           </h2>
         </div>
