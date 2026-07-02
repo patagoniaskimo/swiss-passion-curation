@@ -574,8 +574,9 @@ function LocalPresence() {
               Disponible en Argentina.
             </h2>
             <p className="mt-6 max-w-[52ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">
-              Patagonia SkiMo mantiene stock en Argentina. Colaboraciones Invierno 2026 en San Martín de los Andes y El
-              Chaltén — para que puedas ver, probar y retirar tu equipo en el lugar, cerca de las líneas que querés hacer.
+              Patagonia SkiMo mantiene stock en Argentina. Colaboraciones Invierno 2026 con Chilco Experiencias en San
+              Martín de los Andes chilcoexperiencias.com y con el Indio Cuá en El Chaltén www.indio.com — para que puedas
+              ver, probar y retirar tu equipo en el lugar, cerca de las líneas que querés hacer.
             </p>
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
