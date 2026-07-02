@@ -215,19 +215,19 @@ function Problem() {
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="II" label="El problema" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[48px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[40px]">
             Comprar equipamiento de montaña no debería ser tan difícil.
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-3 md:gap-10">
+        <div className="mt-10 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-3 md:gap-10">
           {items.map((it) => (
             <article key={it.k} className="border-t border-foreground pt-5">
               <div className="flex items-baseline justify-between">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Fig. {it.k}</span>
                 <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
               </div>
-              <h3 className="mt-4 text-[20px] font-bold tracking-tighter md:text-[24px]">{it.t}</h3>
+              <h3 className="mt-4 text-[18px] font-bold tracking-tighter md:text-[22px]">{it.t}</h3>
               <p className="mt-3 max-w-[42ch] text-[14px] leading-[1.55] text-foreground/75">{it.d}</p>
             </article>
           ))}
