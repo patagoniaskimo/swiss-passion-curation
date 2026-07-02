@@ -290,7 +290,7 @@ function Brands() {
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="VI" label="Nuestras marcas" />
+            <SectionLabel n="III" label="Nuestras marcas" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
             Una colección curada, no un catálogo.
@@ -469,10 +469,10 @@ function Products() {
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="VII" label="Selección destacada" />
+            <SectionLabel n="IV" label="Selección destacada" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            Siete piezas. Cada una elegida a propósito.
+            Once piezas. Cada una elegida a propósito.
           </h2>
         </div>
 
@@ -536,11 +536,11 @@ function HowItWorks() {
     { t: "Recibilo en Argentina.", n: "04" },
   ];
   return (
-    <section className="border-b border-border bg-secondary">
+    <section id="how-it-works" className="border-b border-border bg-secondary">
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="VIII" label="Cómo funciona" />
+            <SectionLabel n="V" label="Cómo funciona" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
             Cuatro pasos, una conversación honesta.
@@ -571,7 +571,7 @@ function LocalPresence() {
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="IX" label="Presencia local" />
+            <SectionLabel n="VI" label="Presencia local" />
           </div>
           <div className="col-span-12 md:col-span-8">
             <h2 className="max-w-[18ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:text-[52px]">
@@ -616,7 +616,7 @@ function FAQ() {
       <div className="container-editorial py-20 md:py-32">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="X" label="Preguntas frecuentes" />
+            <SectionLabel n="VII" label="Preguntas frecuentes" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
             Preguntas que respondemos todas las semanas.
