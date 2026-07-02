@@ -13,6 +13,11 @@ import product16 from "@/assets/product-16.png.asset.json";
 import product17 from "@/assets/product-17.png.asset.json";
 import product18 from "@/assets/product-18.png.asset.json";
 import product19 from "@/assets/product-19.png.asset.json";
+import brandMovement from "@/assets/brand-movement.png.asset.json";
+import brandColltex from "@/assets/brand-colltex.png.asset.json";
+import brandMarker from "@/assets/brand-marker.png.asset.json";
+import brandPlum from "@/assets/brand-plum.png.asset.json";
+import brandMendiboard from "@/assets/brand-mendiboard.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -34,7 +39,7 @@ function Index() {
       <Nav />
       <Hero />
       <BeltStrip />
-      <Problem />
+      
       <Brands />
       <Products />
       <HowItWorks />
@@ -277,38 +282,33 @@ function Founders() {
 
 function Brands() {
   const brands = [
-    { name: "Movement", note: "Esquís suizos" },
-    { name: "Movement Boots", note: "Hecho en Italia" },
-    { name: "Colltex", note: "Pieles suizas" },
-    { name: "Marker", note: "Fijaciones" },
-    { name: "PLUM", note: "Fijaciones francesas" },
-    { name: "Mendiboard", note: "Splitboards españoles" },
+    { name: "Movement", logo: brandMovement.url, dark: true },
+    { name: "Colltex", logo: brandColltex.url, dark: false },
+    { name: "Marker", logo: brandMarker.url, dark: false },
+    { name: "PLUM", logo: brandPlum.url, dark: false },
+    { name: "Mendiboard", logo: brandMendiboard.url, dark: false },
   ];
   return (
     <section id="brands" className="border-b border-border">
-      <div className="container-editorial py-20 md:py-32">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="III" label="Nuestras marcas" />
-          </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
-            Una colección curada, no un catálogo.
-          </h2>
+      <div className="container-editorial py-10 md:py-14">
+        <div className="flex flex-wrap items-baseline justify-between gap-4">
+          <SectionLabel n="II" label="Marcas" />
+          <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+            Selección curada desde Europa
+          </span>
         </div>
-
-        <div className="mt-14 grid grid-cols-2 border-t border-foreground md:mt-20 md:grid-cols-3">
-          {brands.map((b, i) => (
+        <div className="mt-6 grid grid-cols-2 items-center gap-4 sm:grid-cols-3 md:grid-cols-5 md:gap-6">
+          {brands.map((b) => (
             <div
               key={b.name}
-              className="flex min-h-[180px] flex-col justify-between border-b border-r border-foreground p-6 last:border-r-0 md:min-h-[220px] md:p-10 [&:nth-child(2n)]:border-r-0 md:[&:nth-child(2n)]:border-r md:[&:nth-child(3n)]:border-r-0"
+              className={`flex h-20 items-center justify-center px-4 md:h-24 ${b.dark ? "bg-foreground" : "bg-secondary"}`}
             >
-              <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-muted-foreground">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <div className="mt-6">
-                <p className="text-[24px] font-bold tracking-tighter md:text-[32px]">{b.name}</p>
-                <p className="mt-1 text-[12px] font-medium uppercase tracking-[0.18em] text-muted-foreground">{b.note}</p>
-              </div>
+              <img
+                src={b.logo}
+                alt={`${b.name} logo`}
+                loading="lazy"
+                className="max-h-12 w-auto max-w-full object-contain md:max-h-14"
+              />
             </div>
           ))}
         </div>
@@ -316,6 +316,7 @@ function Brands() {
     </section>
   );
 }
+
 
 function Products() {
   const products = [
