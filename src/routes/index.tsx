@@ -125,7 +125,7 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="container-editorial pt-10 pb-8 md:pt-16 md:pb-12">
+      <div className="container-editorial pt-8 pb-6 md:pt-12 md:pb-8">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 flex items-center gap-3 md:col-span-6">
             <span className="inline-block h-2 w-2 bg-swiss-red" aria-hidden />
@@ -140,14 +140,14 @@ function Hero() {
           </div>
         </div>
 
-        <h1 className="mt-8 max-w-[18ch] text-[40px] font-bold leading-[0.95] tracking-tighter sm:text-5xl md:mt-10 md:text-[80px] md:leading-[0.92]">
+        <h1 className="mt-6 max-w-[18ch] text-[34px] font-bold leading-[0.95] tracking-tighter sm:text-[42px] md:mt-8 md:text-[64px] md:leading-[0.92]">
           Equipamiento para&nbsp;
           <br />
           <span className="text-muted-foreground">Ski de travesía.</span>
         </h1>
 
-        <div className="mt-8 grid grid-cols-12 gap-6 md:mt-12">
-          <p className="col-span-12 max-w-[52ch] text-[16px] leading-[1.5] text-foreground/80 md:col-span-7 md:text-[18px]">
+        <div className="mt-6 grid grid-cols-12 gap-6 md:mt-8">
+          <p className="col-span-12 max-w-[52ch] text-[15px] leading-[1.5] text-foreground/80 md:col-span-7 md:text-[16px]">
             Equipamiento premium de montaña seleccionado en Europa y disponible en Argentina.
           </p>
           <div className="col-span-12 flex flex-wrap items-start gap-3 md:col-span-5 md:justify-end">
@@ -169,14 +169,14 @@ function Hero() {
         </div>
       </div>
 
-      <div className="container-editorial pb-10 md:pb-14">
-        <div className="flex items-center justify-center border border-border bg-background px-6 py-10 md:py-16">
+      <div className="container-editorial pb-8 md:pb-10">
+        <div className="flex items-center justify-center border border-border bg-background px-6 py-6 md:py-10">
           <img
             src={logoUrl}
             alt="Patagonia SkiMo"
             width={1200}
             height={600}
-            className="w-full max-w-2xl object-contain"
+            className="w-full max-w-xl object-contain"
           />
         </div>
       </div>
