@@ -42,9 +42,10 @@ function Index() {
       
       <Brands />
       <Products />
+      <FAQ />
       <HowItWorks />
       <LocalPresence />
-      <FAQ />
+
       <Solution />
       <Founders />
       <FinalCTA />
