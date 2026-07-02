@@ -282,11 +282,11 @@ function Founders() {
 
 function Brands() {
   const brands = [
-    { name: "Movement", logo: brandMovement.url, dark: true },
-    { name: "Colltex", logo: brandColltex.url, dark: false },
-    { name: "Marker", logo: brandMarker.url, dark: false },
-    { name: "PLUM", logo: brandPlum.url, dark: false },
-    { name: "Mendiboard", logo: brandMendiboard.url, dark: false },
+    { name: "Movement", logo: brandMovement.url },
+    { name: "Colltex", logo: brandColltex.url },
+    { name: "Marker", logo: brandMarker.url },
+    { name: "PLUM", logo: brandPlum.url },
+    { name: "Mendiboard", logo: brandMendiboard.url },
   ];
   return (
     <section id="brands" className="border-b border-border">
@@ -297,17 +297,17 @@ function Brands() {
             Selección curada desde Europa
           </span>
         </div>
-        <div className="mt-6 grid grid-cols-2 items-center gap-4 sm:grid-cols-3 md:grid-cols-5 md:gap-6">
+        <div className="mt-8 grid grid-cols-2 items-center gap-6 sm:grid-cols-3 md:grid-cols-5 md:gap-10">
           {brands.map((b) => (
             <div
               key={b.name}
-              className={`flex h-20 items-center justify-center px-4 md:h-24 ${b.dark ? "bg-foreground" : "bg-secondary"}`}
+              className="flex h-16 items-center justify-center md:h-20"
             >
               <img
                 src={b.logo}
                 alt={`${b.name} logo`}
                 loading="lazy"
-                className="max-h-12 w-auto max-w-full object-contain md:max-h-14"
+                className="max-h-full w-auto max-w-full object-contain opacity-80 transition-opacity hover:opacity-100"
               />
             </div>
           ))}
