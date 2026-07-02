@@ -169,8 +169,8 @@ function Hero() {
         </div>
       </div>
 
-      <div className="container-editorial pb-8 md:pb-10">
-        <div className="flex items-center justify-center border border-border bg-background px-6 py-6 md:py-10">
+      <div className="container-editorial pb-6 md:pb-8">
+        <div className="flex items-center justify-center px-4 py-4 md:py-6">
           <img
             src={logoUrl}
             alt="Patagonia SkiMo"
