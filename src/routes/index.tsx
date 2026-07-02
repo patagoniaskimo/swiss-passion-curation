@@ -609,32 +609,32 @@ function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <section id="faq" className="border-b border-border bg-secondary">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="VII" label="Preguntas frecuentes" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[44px]">
             Preguntas que respondemos todas las semanas.
           </h2>
         </div>
 
-        <div className="mt-14 md:mt-20">
+        <div className="mt-12 md:mt-16">
           {items.map((it, i) => {
             const isOpen = open === i;
             return (
               <div key={it.q} className="border-t border-foreground last:border-b">
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-4 py-6 text-left md:py-8"
+                  className="flex w-full items-center justify-between gap-4 py-5 text-left md:py-6"
                 >
-                  <span className="text-[18px] font-bold tracking-tighter md:text-[24px]">{it.q}</span>
+                  <span className="text-[16px] font-bold tracking-tighter md:text-[20px]">{it.q}</span>
                   <span className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.12em] text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline md:text-[12px]">
                     {isOpen ? "Cerrar" : "Ver respuesta"}
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="pb-8">
+                  <div className="pb-6">
                     <p className="max-w-[62ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">{it.a}</p>
                   </div>
                 )}
@@ -650,15 +650,15 @@ function FAQ() {
 function FinalCTA() {
   return (
     <section className="border-b border-border">
-      <div className="container-editorial py-24 text-center md:py-40">
+      <div className="container-editorial py-20 text-center md:py-28">
         <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">— Hablemos</span>
-        <h2 className="mx-auto mt-8 max-w-[18ch] text-[36px] font-bold leading-[1] tracking-tighter md:text-[80px]">
+        <h2 className="mx-auto mt-6 max-w-[18ch] text-[32px] font-bold leading-[1] tracking-tighter md:text-[64px]">
           ¿Todavía no sabés qué equipo te conviene?
         </h2>
-        <p className="mx-auto mt-8 max-w-[42ch] text-[16px] leading-[1.6] text-foreground/75 md:text-[19px]">
+        <p className="mx-auto mt-6 max-w-[42ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[17px]">
           Contanos dónde esquías. Te ayudamos a elegir el equipo adecuado.
         </p>
-        <div className="mt-12">
+        <div className="mt-10">
           <a
             href={WHATSAPP_URL}
             target="_blank"
