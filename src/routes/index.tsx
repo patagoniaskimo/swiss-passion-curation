@@ -533,26 +533,26 @@ function HowItWorks() {
   ];
   return (
     <section id="how-it-works" className="border-b border-border bg-secondary">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="V" label="Cómo funciona" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[44px]">
             Cuatro pasos, una conversación honesta.
           </h2>
         </div>
 
-        <ol className="mt-14 grid grid-cols-1 md:mt-20 md:grid-cols-4">
+        <ol className="mt-12 grid grid-cols-1 md:mt-16 md:grid-cols-4">
           {steps.map((s, i) => (
             <li
               key={s.n}
-              className={`flex min-h-[200px] flex-col justify-between border-t border-foreground py-8 pr-6 md:py-10 ${
+              className={`flex min-h-[160px] flex-col justify-between border-t border-foreground py-8 pr-6 md:py-10 ${
                 i !== steps.length - 1 ? "md:border-r" : ""
               }`}
             >
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-swiss-red">Paso {s.n}</span>
-              <p className="mt-8 max-w-[22ch] text-[20px] font-bold tracking-tighter md:text-[22px]">{s.t}</p>
+              <p className="mt-8 max-w-[22ch] text-[18px] font-bold tracking-tighter md:text-[20px]">{s.t}</p>
             </li>
           ))}
         </ol>
@@ -564,26 +564,26 @@ function HowItWorks() {
 function LocalPresence() {
   return (
     <section className="border-b border-border">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="VI" label="Presencia local" />
           </div>
           <div className="col-span-12 md:col-span-8">
-            <h2 className="max-w-[18ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:text-[52px]">
+            <h2 className="max-w-[18ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:text-[44px]">
               Disponible en Argentina.
             </h2>
-            <p className="mt-8 max-w-[52ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[17px]">
+            <p className="mt-6 max-w-[52ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">
               Patagonia SkiMo mantiene stock en Argentina. Colaboraciones Invierno 2026 en San Martín de los Andes y El
               Chaltén — para que puedas ver, probar y retirar tu equipo en el lugar, cerca de las líneas que querés hacer.
             </p>
-            <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
                 { c: "San Martín de los Andes", r: "Neuquén, AR" },
                 { c: "El Chaltén", r: "Santa Cruz, AR" },
               ].map((p) => (
                 <div key={p.c} className="border-t border-foreground pt-4">
-                  <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">{p.c}</p>
+                  <p className="text-[18px] font-bold tracking-tighter md:text-[20px]">{p.c}</p>
                   <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
                     {p.r} · Invierno 2026
                   </p>
