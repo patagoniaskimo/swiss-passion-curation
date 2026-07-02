@@ -39,13 +39,11 @@ function Index() {
       <Nav />
       <Hero />
       <BeltStrip />
-      
       <Brands />
       <Products />
+      <LocalPresence />
       <FAQ />
       <HowItWorks />
-      <LocalPresence />
-
       <Solution />
       <Founders />
       <FinalCTA />
@@ -127,7 +125,7 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="container-editorial pt-10 pb-8 md:pt-16 md:pb-12">
+      <div className="container-editorial pt-8 pb-6 md:pt-12 md:pb-8">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 flex items-center gap-3 md:col-span-6">
             <span className="inline-block h-2 w-2 bg-swiss-red" aria-hidden />
@@ -142,14 +140,14 @@ function Hero() {
           </div>
         </div>
 
-        <h1 className="mt-8 max-w-[18ch] text-[40px] font-bold leading-[0.95] tracking-tighter sm:text-5xl md:mt-10 md:text-[80px] md:leading-[0.92]">
+        <h1 className="mt-6 max-w-[18ch] text-[32px] font-bold leading-[0.95] tracking-tighter sm:text-[40px] md:mt-8 md:text-[56px] md:leading-[0.92]">
           Equipamiento para&nbsp;
           <br />
           <span className="text-muted-foreground">Ski de travesía.</span>
         </h1>
 
-        <div className="mt-8 grid grid-cols-12 gap-6 md:mt-12">
-          <p className="col-span-12 max-w-[52ch] text-[16px] leading-[1.5] text-foreground/80 md:col-span-7 md:text-[18px]">
+        <div className="mt-6 grid grid-cols-12 gap-6 md:mt-8">
+          <p className="col-span-12 max-w-[52ch] text-[15px] leading-[1.5] text-foreground/80 md:col-span-7 md:text-[16px]">
             Equipamiento premium de montaña seleccionado en Europa y disponible en Argentina.
           </p>
           <div className="col-span-12 flex flex-wrap items-start gap-3 md:col-span-5 md:justify-end">
@@ -171,14 +169,14 @@ function Hero() {
         </div>
       </div>
 
-      <div className="container-editorial pb-10 md:pb-14">
-        <div className="flex items-center justify-center border border-border bg-background px-6 py-10 md:py-16">
+      <div className="container-editorial pb-6 md:pb-8">
+        <div className="flex items-center justify-center px-4 py-4 md:py-6">
           <img
             src={logoUrl}
             alt="Patagonia SkiMo"
             width={1200}
             height={600}
-            className="w-full max-w-2xl object-contain"
+            className="w-full max-w-xl object-contain"
           />
         </div>
       </div>
@@ -217,19 +215,19 @@ function Problem() {
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="II" label="El problema" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[48px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[40px]">
             Comprar equipamiento de montaña no debería ser tan difícil.
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-3 md:gap-10">
+        <div className="mt-10 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-3 md:gap-10">
           {items.map((it) => (
             <article key={it.k} className="border-t border-foreground pt-5">
               <div className="flex items-baseline justify-between">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Fig. {it.k}</span>
                 <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
               </div>
-              <h3 className="mt-4 text-[20px] font-bold tracking-tighter md:text-[24px]">{it.t}</h3>
+              <h3 className="mt-4 text-[18px] font-bold tracking-tighter md:text-[22px]">{it.t}</h3>
               <p className="mt-3 max-w-[42ch] text-[14px] leading-[1.55] text-foreground/75">{it.d}</p>
             </article>
           ))}
@@ -464,17 +462,17 @@ function Products() {
   ];
   return (
     <section id="selection" className="border-b border-border">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="IV" label="Selección destacada" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
             Once piezas. Cada una elegida a propósito.
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-10 md:mt-20 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {products.map((p) => (
             <article key={p.name} className="flex flex-col border-t border-foreground pt-6">
               <div className="flex items-baseline justify-between">
@@ -491,7 +489,7 @@ function Products() {
                   className="aspect-[4/5] w-full object-contain"
                 />
               </div>
-              <h3 className="mt-6 text-[22px] font-bold tracking-tighter md:text-[24px]">{p.name}</h3>
+              <h3 className="mt-6 text-[20px] font-bold tracking-tighter md:text-[22px]">{p.name}</h3>
               <p className="mt-3 text-[14px] leading-[1.55] text-foreground/75">{p.desc}</p>
 
               <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 border-t border-border pt-4 text-[12px]">
@@ -535,26 +533,26 @@ function HowItWorks() {
   ];
   return (
     <section id="how-it-works" className="border-b border-border bg-secondary">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="V" label="Cómo funciona" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
             Cuatro pasos, una conversación honesta.
           </h2>
         </div>
 
-        <ol className="mt-14 grid grid-cols-1 md:mt-20 md:grid-cols-4">
+        <ol className="mt-12 grid grid-cols-1 md:mt-16 md:grid-cols-4">
           {steps.map((s, i) => (
             <li
               key={s.n}
-              className={`flex min-h-[200px] flex-col justify-between border-t border-foreground py-8 pr-6 md:py-10 ${
+              className={`flex min-h-[160px] flex-col justify-between border-t border-foreground py-8 pr-6 md:py-10 ${
                 i !== steps.length - 1 ? "md:border-r" : ""
               }`}
             >
               <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-swiss-red">Paso {s.n}</span>
-              <p className="mt-8 max-w-[22ch] text-[20px] font-bold tracking-tighter md:text-[22px]">{s.t}</p>
+              <p className="mt-8 max-w-[22ch] text-[18px] font-bold tracking-tighter md:text-[20px]">{s.t}</p>
             </li>
           ))}
         </ol>
@@ -566,26 +564,26 @@ function HowItWorks() {
 function LocalPresence() {
   return (
     <section className="border-b border-border">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="VI" label="Presencia local" />
           </div>
           <div className="col-span-12 md:col-span-8">
-            <h2 className="max-w-[18ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:text-[52px]">
+            <h2 className="max-w-[18ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
               Disponible en Argentina.
             </h2>
-            <p className="mt-8 max-w-[52ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[17px]">
+            <p className="mt-6 max-w-[52ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">
               Patagonia SkiMo mantiene stock en Argentina. Colaboraciones Invierno 2026 en San Martín de los Andes y El
               Chaltén — para que puedas ver, probar y retirar tu equipo en el lugar, cerca de las líneas que querés hacer.
             </p>
-            <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
                 { c: "San Martín de los Andes", r: "Neuquén, AR" },
                 { c: "El Chaltén", r: "Santa Cruz, AR" },
               ].map((p) => (
                 <div key={p.c} className="border-t border-foreground pt-4">
-                  <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">{p.c}</p>
+                  <p className="text-[18px] font-bold tracking-tighter md:text-[20px]">{p.c}</p>
                   <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
                     {p.r} · Invierno 2026
                   </p>
@@ -611,32 +609,32 @@ function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <section id="faq" className="border-b border-border bg-secondary">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="VII" label="Preguntas frecuentes" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
             Preguntas que respondemos todas las semanas.
           </h2>
         </div>
 
-        <div className="mt-14 md:mt-20">
+        <div className="mt-12 md:mt-16">
           {items.map((it, i) => {
             const isOpen = open === i;
             return (
               <div key={it.q} className="border-t border-foreground last:border-b">
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-4 py-6 text-left md:py-8"
+                  className="flex w-full items-center justify-between gap-4 py-5 text-left md:py-6"
                 >
-                  <span className="text-[18px] font-bold tracking-tighter md:text-[24px]">{it.q}</span>
+                  <span className="text-[16px] font-bold tracking-tighter md:text-[20px]">{it.q}</span>
                   <span className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.12em] text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline md:text-[12px]">
                     {isOpen ? "Cerrar" : "Ver respuesta"}
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="pb-8">
+                  <div className="pb-6">
                     <p className="max-w-[62ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">{it.a}</p>
                   </div>
                 )}
@@ -652,15 +650,15 @@ function FAQ() {
 function FinalCTA() {
   return (
     <section className="border-b border-border">
-      <div className="container-editorial py-24 text-center md:py-40">
+      <div className="container-editorial py-20 text-center md:py-28">
         <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">— Hablemos</span>
-        <h2 className="mx-auto mt-8 max-w-[18ch] text-[36px] font-bold leading-[1] tracking-tighter md:text-[80px]">
+        <h2 className="mx-auto mt-6 max-w-[18ch] text-[32px] font-bold leading-[1] tracking-tighter md:text-[64px]">
           ¿Todavía no sabés qué equipo te conviene?
         </h2>
-        <p className="mx-auto mt-8 max-w-[42ch] text-[16px] leading-[1.6] text-foreground/75 md:text-[19px]">
+        <p className="mx-auto mt-6 max-w-[42ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[17px]">
           Contanos dónde esquías. Te ayudamos a elegir el equipo adecuado.
         </p>
-        <div className="mt-12">
+        <div className="mt-10">
           <a
             href={WHATSAPP_URL}
             target="_blank"
