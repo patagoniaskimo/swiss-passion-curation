@@ -39,7 +39,7 @@ function Index() {
       <Nav />
       <Hero />
       <BeltStrip />
-      <Problem />
+      
       <Brands />
       <Products />
       <HowItWorks />
