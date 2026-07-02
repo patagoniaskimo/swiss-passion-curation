@@ -172,13 +172,13 @@ function Hero() {
       </div>
 
       <div className="container-editorial pb-10 md:pb-14">
-        <div className="flex items-center justify-center border border-border bg-secondary px-6 py-16 md:py-24">
+        <div className="flex items-center justify-center border border-border bg-background px-6 py-10 md:py-16">
           <img
             src={logoUrl}
             alt="Patagonia SkiMo"
             width={1200}
             height={600}
-            className="w-full max-w-3xl object-contain"
+            className="w-full max-w-2xl object-contain"
           />
         </div>
       </div>
