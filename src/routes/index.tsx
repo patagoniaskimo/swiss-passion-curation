@@ -462,17 +462,17 @@ function Products() {
   ];
   return (
     <section id="selection" className="border-b border-border">
-      <div className="container-editorial py-20 md:py-32">
+      <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
             <SectionLabel n="IV" label="Selección destacada" />
           </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[32px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[52px]">
+          <h2 className="col-span-12 max-w-[22ch] text-[28px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[44px]">
             Once piezas. Cada una elegida a propósito.
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-10 md:mt-20 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {products.map((p) => (
             <article key={p.name} className="flex flex-col border-t border-foreground pt-6">
               <div className="flex items-baseline justify-between">
@@ -489,7 +489,7 @@ function Products() {
                   className="aspect-[4/5] w-full object-contain"
                 />
               </div>
-              <h3 className="mt-6 text-[22px] font-bold tracking-tighter md:text-[24px]">{p.name}</h3>
+              <h3 className="mt-6 text-[20px] font-bold tracking-tighter md:text-[22px]">{p.name}</h3>
               <p className="mt-3 text-[14px] leading-[1.55] text-foreground/75">{p.desc}</p>
 
               <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 border-t border-border pt-4 text-[12px]">
