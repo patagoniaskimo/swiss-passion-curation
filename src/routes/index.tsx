@@ -12,6 +12,8 @@ import product16 from "@/assets/product-16.png.asset.json";
 import product17 from "@/assets/product-17.png.asset.json";
 import product18 from "@/assets/product-18.png.asset.json";
 import product19 from "@/assets/product-19.png.asset.json";
+import product20 from "@/assets/product-20.png.asset.json";
+import product21 from "@/assets/product-21.png.asset.json";
 import brandMovement from "@/assets/brand-movement.png.asset.json";
 import brandColltex from "@/assets/brand-colltex.png.asset.json";
 import brandMarker from "@/assets/brand-marker.png.asset.json";
@@ -415,6 +417,32 @@ function Products() {
         { k: "Peso", v: "1.750 g / par" },
       ],
       price: "USD 640",
+    },
+    {
+      img: product20.url,
+      cat: "Cascos",
+      name: "Movement 3Tech Alpi Honeycomb",
+      desc: "Casco híbrido de ski touring y alpinismo con tecnología Honeycomb. Ventilación ajustable, ligero y certificado para ambas disciplinas.",
+      specs: [
+        { k: "Certificación", v: "Ski + Alpinismo" },
+        { k: "Tecnología", v: "Honeycomb 3 Functions" },
+        { k: "Talles", v: "XS-M / M-L" },
+        { k: "Color", v: "White / Grey" },
+      ],
+      price: "USD 240",
+    },
+    {
+      img: product21.url,
+      cat: "Cascos",
+      name: "Movement 3Tech Alpi Honeycomb",
+      desc: "Versión con detalles en naranja de alta visibilidad. Mismo casco híbrido certificado para ski touring y alpinismo con tecnología Honeycomb.",
+      specs: [
+        { k: "Certificación", v: "Ski + Alpinismo" },
+        { k: "Tecnología", v: "Honeycomb 3 Functions" },
+        { k: "Talles", v: "XS-M / M-L" },
+        { k: "Color", v: "White / Orange" },
+      ],
+      price: "USD 240",
     },
   ];
   return (
