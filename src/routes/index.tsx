@@ -123,13 +123,13 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="container-editorial pt-8 pb-6 md:pt-12 md:pb-8">
-        <div className="flex items-center justify-center px-4 py-2 md:py-4">
+      <div className="container-editorial pt-6 pb-4 md:pt-8 md:pb-6">
+        <div className="flex items-center justify-center">
           <img
             src={logoUrl}
             alt="Patagonia SkiMo"
-            width={1200}
-            height={600}
+            width={1599}
+            height={902}
             className="w-full max-w-xl object-contain"
           />
         </div>
