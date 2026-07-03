@@ -158,23 +158,6 @@ function Hero() {
   );
 }
 
-function BeltStrip() {
-  const items = ["De Suiza.", "A Argentina.", "Pasión por la montaña."];
-  return (
-    <section className="border-b border-border bg-secondary">
-      <div className="container-editorial grid grid-cols-1 gap-6 py-6 md:grid-cols-3 md:gap-12 md:py-8">
-        {items.map((t, i) => (
-          <div key={t} className="flex items-baseline gap-4">
-            <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              0{i + 1}
-            </span>
-            <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">{t}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 function Problem() {
   const items = [
