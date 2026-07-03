@@ -156,22 +156,6 @@ function Hero() {
             <p className="mt-6 max-w-[50ch] text-[15px] leading-[1.5] text-foreground/80 md:mt-8 md:text-[16px]">
               Esquís, fijaciones, pieles y splitboards seleccionados en Europa por esquiadores argentinos viviendo en Suiza.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3 md:mt-8">
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 border border-foreground bg-foreground px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-background hover:text-foreground"
-              >
-                <WhatsAppIcon /> HABLAR POR WHATSAPP
-              </a>
-              <a
-                href="#selection"
-                className="inline-flex items-center gap-2 border border-foreground bg-background px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-foreground transition-colors hover:bg-foreground hover:text-background"
-              >
-                VER SELECCIÓN
-              </a>
-            </div>
           </div>
         </div>
       </div>
