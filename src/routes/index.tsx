@@ -446,7 +446,7 @@ function Products() {
             <SectionLabel n="IV" label="Selección destacada" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
-            Once piezas. Cada una elegida a propósito.
+            Nuestros productos
           </h2>
         </div>
 
