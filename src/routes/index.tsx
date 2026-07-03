@@ -139,14 +139,12 @@ function Hero() {
 
           <div className="col-span-12 md:col-span-6 md:col-start-7">
             <h1 className="max-w-[16ch] text-[36px] font-bold leading-[0.95] tracking-tighter sm:text-[44px] md:text-[60px] md:leading-[0.92]">
-              Equipamiento
+              Equipamiento&nbsp;para
               <br />
-              europeo para
-              <br />
-              <span className="text-muted-foreground">ski de travesía.</span>
+              ski de travesía.
             </h1>
             <p className="mt-6 max-w-[50ch] text-[15px] leading-[1.5] text-foreground/80 md:mt-8 md:text-[16px]">
-              Esquís, fijaciones, pieles y splitboards seleccionados en Europa por esquiadores argentinos viviendo en Suiza.
+              Skis, splitboards, fijaciones, pieles y cascos seleccionados en Europa por esquiadores argentinos viviendo en Suiza.
             </p>
           </div>
         </div>
