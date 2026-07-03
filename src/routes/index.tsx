@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import logoAsset from "@/assets/patagonia-skimo-hero.png.asset.json";
-const logoUrl = logoAsset.url;
+import logoUrl from "@/assets/patagonia-skimo-hero.png";
 import product9 from "@/assets/product-9.png.asset.json";
 import product10 from "@/assets/product-10.png.asset.json";
 import product11 from "@/assets/product-11.png.asset.json";
@@ -38,7 +37,6 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <Nav />
       <Hero />
-      <BeltStrip />
       <Brands />
       <Products />
       <LocalPresence />
