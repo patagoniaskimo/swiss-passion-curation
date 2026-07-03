@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import logoAsset from "@/assets/patagonia-skimo-hero.png.asset.json";
-const logoUrl = logoAsset.url;
+import logoUrl from "@/assets/patagonia-skimo-hero.png";
 import product9 from "@/assets/product-9.png.asset.json";
 import product10 from "@/assets/product-10.png.asset.json";
 import product11 from "@/assets/product-11.png.asset.json";
@@ -38,7 +37,6 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <Nav />
       <Hero />
-      <BeltStrip />
       <Brands />
       <Products />
       <LocalPresence />
@@ -125,13 +123,13 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="container-editorial pt-8 pb-6 md:pt-12 md:pb-8">
-        <div className="flex items-center justify-center px-4 py-2 md:py-4">
+      <div className="container-editorial pt-6 pb-4 md:pt-8 md:pb-6">
+        <div className="flex items-center justify-center">
           <img
             src={logoUrl}
             alt="Patagonia SkiMo"
-            width={1200}
-            height={600}
+            width={1599}
+            height={902}
             className="w-full max-w-xl object-contain"
           />
         </div>
@@ -160,23 +158,6 @@ function Hero() {
   );
 }
 
-function BeltStrip() {
-  const items = ["De Suiza.", "A Argentina.", "Pasión por la montaña."];
-  return (
-    <section className="border-b border-border bg-secondary">
-      <div className="container-editorial grid grid-cols-1 gap-6 py-6 md:grid-cols-3 md:gap-12 md:py-8">
-        {items.map((t, i) => (
-          <div key={t} className="flex items-baseline gap-4">
-            <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              0{i + 1}
-            </span>
-            <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">{t}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 function Problem() {
   const items = [
