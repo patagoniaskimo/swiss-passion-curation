@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import logoAsset from "@/assets/patagonia-skimo-logo.png.asset.json";
+import logoAsset from "@/assets/patagonia-skimo-hero.png.asset.json";
 const logoUrl = logoAsset.url;
 import product9 from "@/assets/product-9.png.asset.json";
 import product10 from "@/assets/product-10.png.asset.json";
@@ -137,45 +137,23 @@ function Hero() {
         </div>
 
         <div className="mt-4 grid grid-cols-12 gap-6 md:mt-6">
-          <div className="col-span-12 flex items-center gap-3 md:col-span-6">
-            <span className="inline-block h-2 w-2 bg-swiss-red" aria-hidden />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              N°01 · De Suiza a Argentina
-            </span>
-          </div>
-          <div className="col-span-12 md:col-span-6 md:text-right">
+          <div className="col-span-12 md:col-span-12 md:text-center">
             <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
               Invierno 2026 — Ski touring / Splitboard / Freeride
             </span>
           </div>
         </div>
 
-        <h1 className="mt-6 max-w-[18ch] text-[32px] font-bold leading-[0.95] tracking-tighter sm:text-[40px] md:mt-8 md:text-[56px] md:leading-[0.92]">
+        <h1 className="mt-6 max-w-[22ch] text-[32px] font-bold leading-[0.95] tracking-tighter sm:text-[40px] md:mt-8 md:text-[56px] md:leading-[0.92]">
           Equipamiento para&nbsp;
           <br />
           <span className="text-muted-foreground">Ski de travesía.</span>
         </h1>
 
         <div className="mt-6 grid grid-cols-12 gap-6 md:mt-8">
-          <p className="col-span-12 max-w-[52ch] text-[15px] leading-[1.5] text-foreground/80 md:col-span-7 md:text-[16px]">
+          <p className="col-span-12 max-w-[60ch] text-[15px] leading-[1.5] text-foreground/80 md:text-[16px]">
             Equipamiento premium de montaña seleccionado en Europa y disponible en Argentina.
           </p>
-          <div className="col-span-12 flex flex-wrap items-start gap-3 md:col-span-5 md:justify-end">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground px-5 py-3 text-[12px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-swiss-red"
-            >
-              <WhatsAppIcon /> Hablar por WhatsApp
-            </a>
-            <a
-              href="#selection"
-              className="inline-flex items-center gap-2 border border-foreground px-5 py-3 text-[12px] font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-foreground hover:text-background"
-            >
-              Ver la selección
-            </a>
-          </div>
         </div>
       </div>
     </section>
@@ -295,13 +273,13 @@ function Brands() {
           {brands.map((b) => (
             <div
               key={b.name}
-              className="flex h-16 items-center justify-center md:h-20"
+              className="flex items-center justify-center"
             >
               <img
                 src={b.logo}
                 alt={`${b.name} logo`}
                 loading="lazy"
-                className="max-h-full w-auto max-w-full object-contain opacity-80 transition-opacity hover:opacity-100"
+                className="h-auto w-full max-w-[140px] object-contain opacity-80 transition-opacity hover:opacity-100"
               />
             </div>
           ))}
@@ -703,7 +681,7 @@ function Footer() {
         </div>
         <div className="mt-14 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-6 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
           <span>© {new Date().getFullYear()} Patagonia SkiMo</span>
-          <span>N°01 · Edición Invierno 2026</span>
+          <span>Edición Invierno 2026</span>
         </div>
       </div>
     </footer>
@@ -725,11 +703,10 @@ function WhatsAppFloating() {
   );
 }
 
-function SectionLabel({ n, label }: { n: string; label: string }) {
+function SectionLabel({ label }: { n?: string; label: string }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">{n}</span>
-      <span className="h-px w-8 bg-foreground" />
+      <span className="h-px w-8 bg-swiss-red" />
       <span className="text-[11px] font-semibold uppercase tracking-[0.24em]">{label}</span>
     </div>
   );
