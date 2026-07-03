@@ -125,28 +125,54 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="container-editorial pt-6 pb-4 md:pt-8 md:pb-6">
-        <div className="flex items-center justify-center">
-          <img
-            src={logoUrl}
-            alt="Patagonia SkiMo"
-            width={1599}
-            height={902}
-            className="w-full max-w-xl object-contain"
-          />
-        </div>
+      <div className="container-editorial py-16 md:py-24">
+        <div className="grid grid-cols-12 gap-8 md:gap-6">
+          <div className="col-span-12 md:col-span-5">
+            <img
+              src={logoUrl}
+              alt="Patagonia SkiMo"
+              width={1599}
+              height={902}
+              className="w-full object-contain"
+            />
+            <div className="mt-8 h-[2px] w-10 bg-swiss-red md:mt-12" aria-hidden />
+            <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground leading-relaxed">
+              DESDE SUIZA.
+              <br />
+              PARA ARGENTINA.
+              <br />
+              PASIÓN POR LA MONTAÑA.
+            </p>
+          </div>
 
-
-        <h1 className="mt-6 max-w-[22ch] text-[32px] font-bold leading-[0.95] tracking-tighter sm:text-[40px] md:mt-8 md:text-[56px] md:leading-[0.92]">
-          Equipamiento para&nbsp;
-          <br />
-          <span className="text-muted-foreground">Ski de travesía.</span>
-        </h1>
-
-        <div className="mt-6 grid grid-cols-12 gap-6 md:mt-8">
-          <p className="col-span-12 max-w-[60ch] text-[15px] leading-[1.5] text-foreground/80 md:text-[16px]">
-            Equipamiento premium de montaña seleccionado en Europa y disponible en Argentina.
-          </p>
+          <div className="col-span-12 md:col-span-6 md:col-start-7">
+            <h1 className="max-w-[16ch] text-[36px] font-bold leading-[0.95] tracking-tighter sm:text-[44px] md:text-[60px] md:leading-[0.92]">
+              Equipamiento
+              <br />
+              europeo para
+              <br />
+              <span className="text-muted-foreground">ski de travesía.</span>
+            </h1>
+            <p className="mt-6 max-w-[50ch] text-[15px] leading-[1.5] text-foreground/80 md:mt-8 md:text-[16px]">
+              Esquís, fijaciones, pieles y splitboards seleccionados en Europa por esquiadores argentinos viviendo en Suiza.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3 md:mt-8">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 border border-foreground bg-foreground px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-background hover:text-foreground"
+              >
+                <WhatsAppIcon /> HABLAR POR WHATSAPP
+              </a>
+              <a
+                href="#selection"
+                className="inline-flex items-center gap-2 border border-foreground bg-background px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-foreground transition-colors hover:bg-foreground hover:text-background"
+              >
+                VER SELECCIÓN
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
