@@ -125,7 +125,7 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="container-editorial py-16 md:py-24">
+      <div className="container-editorial py-10 md:py-14">
         <div className="grid grid-cols-12 gap-8 md:gap-6">
           <div className="col-span-12 md:col-span-5">
             <img
@@ -135,14 +135,6 @@ function Hero() {
               height={902}
               className="w-full object-contain"
             />
-            <div className="mt-8 h-[2px] w-10 bg-swiss-red md:mt-12" aria-hidden />
-            <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground leading-relaxed">
-              DESDE SUIZA.
-              <br />
-              PARA ARGENTINA.
-              <br />
-              PASIÓN POR LA MONTAÑA.
-            </p>
           </div>
 
           <div className="col-span-12 md:col-span-6 md:col-start-7">
