@@ -12,6 +12,8 @@ import product16 from "@/assets/product-16.png.asset.json";
 import product17 from "@/assets/product-17.png.asset.json";
 import product18 from "@/assets/product-18.png.asset.json";
 import product19 from "@/assets/product-19.png.asset.json";
+import product20 from "@/assets/product-20.png.asset.json";
+import product21 from "@/assets/product-21.png.asset.json";
 import brandMovement from "@/assets/brand-movement.png.asset.json";
 import brandColltex from "@/assets/brand-colltex.png.asset.json";
 import brandMarker from "@/assets/brand-marker.png.asset.json";
