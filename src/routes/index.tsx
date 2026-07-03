@@ -136,13 +136,6 @@ function Hero() {
           />
         </div>
 
-        <div className="mt-4 grid grid-cols-12 gap-6 md:mt-6">
-          <div className="col-span-12 md:col-span-12 md:text-center">
-            <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              Invierno 2026 — Ski touring / Splitboard / Freeride
-            </span>
-          </div>
-        </div>
 
         <h1 className="mt-6 max-w-[22ch] text-[32px] font-bold leading-[0.95] tracking-tighter sm:text-[40px] md:mt-8 md:text-[56px] md:leading-[0.92]">
           Equipamiento para&nbsp;
