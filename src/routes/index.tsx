@@ -43,8 +43,6 @@ function Index() {
       <Products />
       <LocalPresence />
       <FAQ />
-      <HowItWorks />
-      <Solution />
       <Founders />
       <FinalCTA />
       <Footer />
@@ -58,7 +56,6 @@ function Nav() {
   const links = [
     { label: "Productos", href: "#selection" },
     { label: "Marcas", href: "#brands" },
-    { label: "Cómo funciona", href: "#how-it-works" },
     { label: "Preguntas frecuentes", href: "#faq" },
     { label: "Nosotros", href: "#about" },
   ];
@@ -154,70 +151,13 @@ function Hero() {
 }
 
 
-function Problem() {
-  const items = [
-    { k: "01", t: "Comprar el ski equivocado", d: "Elegir mal el equipamiento puede significar gastar miles en algo que no se adapta a tu estilo." },
-    { k: "02", t: "Selección limitada", d: "Muchas marcas no llegan a Argentina. Los productos premium son difíciles de encontrar." },
-    { k: "03", t: "Demasiada información", d: "Las especificaciones no reemplazan la experiencia. La gente no necesita más opciones — necesita mejor guía." },
-  ];
-  return (
-    <section id="approach" className="border-b border-border">
-      <div className="container-editorial py-14 md:py-20">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="II" label="El problema" />
-          </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[40px]">
-            Comprar equipamiento de montaña no debería ser tan difícil.
-          </h2>
-        </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-3 md:gap-10">
-          {items.map((it) => (
-            <article key={it.k} className="border-t border-foreground pt-5">
-              <div className="flex items-baseline justify-between">
-                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Fig. {it.k}</span>
-                <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
-              </div>
-              <h3 className="mt-4 text-[18px] font-bold tracking-tighter md:text-[22px]">{it.t}</h3>
-              <p className="mt-3 max-w-[42ch] text-[14px] leading-[1.55] text-foreground/75">{it.d}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Solution() {
-  const cols = [
-    { k: "Buscar", d: "Monitoreamos oportunidades en toda Europa." },
-    { k: "Seleccionar", d: "Solo elegimos equipamiento que usaríamos nosotros." },
-    { k: "Recomendar", d: "Ayudamos a cada cliente a elegir el equipo adecuado." },
-  ];
-  return (
-    <section id="method" className="border-b border-border bg-secondary">
-      <div className="container-editorial py-12 md:py-16">
-        <SectionLabel n="VIII" label="Nuestro método" />
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {cols.map((c, i) => (
-            <div key={c.k} className="border-t border-foreground pt-5">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">Paso 0{i + 1}</span>
-              <h3 className="mt-4 text-[22px] font-bold tracking-tighter">{c.k}</h3>
-              <p className="mt-2 max-w-[38ch] text-[14px] leading-[1.5] text-foreground/75">{c.d}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Founders() {
   return (
     <section id="about" className="border-b border-border">
       <div className="container-editorial py-12 md:py-16">
-        <SectionLabel n="IX" label="Quiénes somos" />
+        <SectionLabel n="VI" label="Quiénes somos" />
         <p className="mt-6 max-w-[70ch] text-[15px] leading-[1.65] text-foreground/80 md:text-[17px]">
           <span className="font-bold text-foreground">Patagonia SkiMo</span> nace de dos amigos argentinos que viven en Suiza.
           Pasamos el año buscando el mejor equipamiento de montaña en Europa para traerlo a Argentina.
@@ -443,7 +383,7 @@ function Products() {
       <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="IV" label="Selección destacada" />
+            <SectionLabel n="III" label="Selección destacada" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
             Nuestros productos
@@ -502,50 +442,13 @@ function Products() {
   );
 }
 
-function HowItWorks() {
-  const steps = [
-    { t: "Contanos dónde y cómo esquías.", n: "01" },
-    { t: "Te recomendamos el equipo adecuado.", n: "02" },
-    { t: "Reservá tu equipo.", n: "03" },
-    { t: "Recibilo en Argentina.", n: "04" },
-  ];
-  return (
-    <section id="how-it-works" className="border-b border-border bg-secondary">
-      <div className="container-editorial py-16 md:py-24">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="V" label="Cómo funciona" />
-          </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
-            Cuatro pasos, una conversación honesta.
-          </h2>
-        </div>
-
-        <ol className="mt-12 grid grid-cols-1 md:mt-16 md:grid-cols-4">
-          {steps.map((s, i) => (
-            <li
-              key={s.n}
-              className={`flex min-h-[160px] flex-col justify-between border-t border-foreground py-8 pr-6 md:py-10 ${
-                i !== steps.length - 1 ? "md:border-r" : ""
-              }`}
-            >
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-swiss-red">Paso {s.n}</span>
-              <p className="mt-8 max-w-[22ch] text-[18px] font-bold tracking-tighter md:text-[20px]">{s.t}</p>
-            </li>
-          ))}
-        </ol>
-      </div>
-    </section>
-  );
-}
-
 function LocalPresence() {
   return (
     <section className="border-b border-border">
       <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="VI" label="Presencia local" />
+            <SectionLabel n="IV" label="Presencia local" />
           </div>
           <div className="col-span-12 md:col-span-8">
             <h2 className="max-w-[18ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
@@ -594,7 +497,7 @@ function FAQ() {
       <div className="container-editorial py-16 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="VII" label="Preguntas frecuentes" />
+            <SectionLabel n="V" label="Preguntas frecuentes" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
             Preguntas que respondemos todas las semanas.
