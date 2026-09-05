@@ -582,18 +582,18 @@ function Footer() {
           <div className="col-span-6 md:col-span-3">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Contacto</p>
             <ul className="mt-4 space-y-2 text-[14px]">
-              <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:underline">WhatsApp</a></li>
-              <li><a href="mailto:hola@patagoniaskimo.com" className="hover:underline">hola@patagoniaskimo.com</a></li>
-              <li><a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:underline">Instagram</a></li>
+               <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:underline">{"WhatsApp: +41772540422\n\n\n\n"}</a></li>
+               <li><a href="mailto:nieve@patagoniaskimo.com" className="hover:underline">nieve@patagoniaskimo.com</a></li>
+               <li><a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:underline">www.instagram.com/patagoniaskimo/</a></li>
             </ul>
           </div>
           <div className="col-span-6 md:col-span-3">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Ubicaciones</p>
             <ul className="mt-4 space-y-2 text-[14px]">
               <li>Verbier, Suiza</li>
-              <li>Berna, Suiza</li>
-              <li>San Martín de los Andes, AR</li>
-              <li>El Chaltén, AR</li>
+               <li>{"\n"}</li>
+               <li>San Martín de los Andes, Argentina</li>
+               <li>El Chaltén, Argentina</li>
             </ul>
           </div>
         </div>
