@@ -442,43 +442,6 @@ function Products() {
   );
 }
 
-function HowItWorks() {
-  const steps = [
-    { t: "Contanos dónde y cómo esquías.", n: "01" },
-    { t: "Te recomendamos el equipo adecuado.", n: "02" },
-    { t: "Reservá tu equipo.", n: "03" },
-    { t: "Recibilo en Argentina.", n: "04" },
-  ];
-  return (
-    <section id="how-it-works" className="border-b border-border bg-secondary">
-      <div className="container-editorial py-16 md:py-24">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="V" label="Cómo funciona" />
-          </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
-            Cuatro pasos, una conversación honesta.
-          </h2>
-        </div>
-
-        <ol className="mt-12 grid grid-cols-1 md:mt-16 md:grid-cols-4">
-          {steps.map((s, i) => (
-            <li
-              key={s.n}
-              className={`flex min-h-[160px] flex-col justify-between border-t border-foreground py-8 pr-6 md:py-10 ${
-                i !== steps.length - 1 ? "md:border-r" : ""
-              }`}
-            >
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-swiss-red">Paso {s.n}</span>
-              <p className="mt-8 max-w-[22ch] text-[18px] font-bold tracking-tighter md:text-[20px]">{s.t}</p>
-            </li>
-          ))}
-        </ol>
-      </div>
-    </section>
-  );
-}
-
 function LocalPresence() {
   return (
     <section className="border-b border-border">
