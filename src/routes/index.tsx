@@ -170,11 +170,11 @@ function Founders() {
 
 function Brands() {
   const brands = [
-    { name: "Movement", logo: brandMovement.url },
-    { name: "Colltex", logo: brandColltex.url },
-    { name: "Marker", logo: brandMarker.url },
-    { name: "PLUM", logo: brandPlum.url },
-    { name: "Mendiboard", logo: brandMendiboard.url },
+    { name: "Movement", logo: brandMovement.url, href: "https://movementskis.com" },
+    { name: "Colltex", logo: brandColltex.url, href: "https://www.colltex.ch" },
+    { name: "Marker", logo: brandMarker.url, href: "https://markerbindings.com" },
+    { name: "PLUM", logo: brandPlum.url, href: "https://www.fixation-plum.com" },
+    { name: "Mendiboard", logo: brandMendiboard.url, href: "https://mendiboard.com" },
   ];
   return (
     <section id="brands" className="border-b border-border">
@@ -187,8 +187,12 @@ function Brands() {
         </div>
         <div className="mt-8 grid grid-cols-2 items-center gap-6 sm:grid-cols-3 md:grid-cols-5 md:gap-10">
           {brands.map((b) => (
-            <div
+            <a
               key={b.name}
+              href={b.href}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label={`Sitio oficial de ${b.name}`}
               className="flex items-center justify-center"
             >
               <img
@@ -197,7 +201,7 @@ function Brands() {
                 loading="lazy"
                 className="h-auto w-full max-w-[140px] object-contain opacity-80 transition-opacity hover:opacity-100"
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>
