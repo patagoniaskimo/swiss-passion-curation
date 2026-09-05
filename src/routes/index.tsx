@@ -582,7 +582,7 @@ function LocalPresence() {
 function FAQ() {
   const items = [
     { q: "¿Cómo elijo mi ski?", a: "Contanos dónde esquías, cómo esquías y qué querés hacer la próxima temporada. Vinculamos terreno, estilo y peso — no categorías de marketing." },
-    { q: "¿Qué tamaño me conviene?", a: "El tamaño depende de tu altura, peso, habilidad y terreno. Mandanos los datos por WhatsApp y te guiamos paso a paso." },
+    { q: "¿Qué largo me conviene?", a: "Como guía general, para una travesía clásica se recomienda un largo entre 10 y 15 cm menos que la altura del esquiador, para un uso versátil entre 5 y 10 cm menos, y para freetouring o un uso más enfocado en la bajada entre 0 y 5 cm menos. \n\n\nSi priorizás la subida, la ligereza y la maniobrabilidad, conviene elegir un ski más corto; en cambio, si buscás más estabilidad, apoyo y mejor rendimiento en bajada, conviene un ski más largo. \n\n\nTambién es importante tener en cuenta el peso: una persona más liviana puede usar un ski un poco más corto, mientras que una persona más pesada suele beneficiarse de un poco más de largo para ganar apoyo y estabilidad." },
     { q: "Recién empiezo. ¿Qué necesito?", a: "Un equipo que crezca con vos: esquís permisivos, una bota confiable y una fijación que no te limite. Lo armamos alrededor de tu presupuesto." },
     { q: "¿Tienen stock en Argentina?", a: "Sí. Mantenemos un stock curado en Argentina y recibimos pedidos seleccionados directamente de Europa cada temporada." },
     { q: "¿Los productos tienen garantía?", a: "Cada producto lleva la garantía oficial del fabricante. Nosotros gestionamos el proceso con la marca por vos." },
@@ -617,7 +617,7 @@ function FAQ() {
                 </button>
                 {isOpen && (
                   <div className="pb-6">
-                    <p className="max-w-[62ch] text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">{it.a}</p>
+                    <p className="max-w-[62ch] whitespace-pre-line text-[15px] leading-[1.65] text-foreground/75 md:text-[16px]">{it.a}</p>
                   </div>
                 )}
               </div>
