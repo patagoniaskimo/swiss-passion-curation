@@ -468,14 +468,20 @@ function LocalPresence() {
             </p>
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
-                { c: "San Martín de los Andes\nChilco Experiencias", r: "WWW.CHILCOEXPERIENCIAS.COM ·" },
-                { c: "El Chaltén\nAlpine Patagonia", r: "WWW.ALPINEPATAGONIA.COM ·" },
+                { city: "San Martín de los Andes", partner: "Chilco Experiencias", href: "https://www.chilcoexperiencias.com" },
+                { city: "El Chaltén", partner: "Alpine Patagonia", href: "https://www.alpinepatagonia.com" },
               ].map((p) => (
-                <div key={p.c} className="border-t border-foreground pt-4">
-                  <p className="whitespace-pre-line text-[18px] font-bold tracking-tighter md:text-[20px]">{p.c}</p>
-                  <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                    {p.r}
-                  </p>
+                <div key={p.city} className="border-t border-foreground pt-4">
+                  <p className="text-[18px] font-bold tracking-tighter md:text-[20px]">{p.city}</p>
+                  <p className="text-[18px] font-bold tracking-tighter text-muted-foreground md:text-[20px]">{p.partner}</p>
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="mt-1 inline-block text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+                  >
+                    {new URL(p.href).hostname.replace(/^www\./, "").toUpperCase()}
+                  </a>
                 </div>
               ))}
             </div>
