@@ -159,9 +159,13 @@ function Founders() {
       <div className="container-editorial py-12 md:py-16">
         <SectionLabel n="VI" label="Quiénes somos" />
         <p className="mt-6 max-w-[70ch] text-[15px] leading-[1.65] text-foreground/80 md:text-[17px]">
-          <span className="font-bold text-foreground">Patagonia SkiMo</span> nace de dos amigos argentinos que viven en Suiza.
-          Pasamos el año buscando el mejor equipamiento de montaña en Europa para traerlo a Argentina.
-          Esquiamos lo que recomendamos y respondemos por cada equipo.
+          <span className="font-bold text-foreground">Patagonia Skimo</span> nace de dos amigos argentinos unidos por una misma pasión: la montaña.
+          Vivimos en Suiza, en el corazón de los Alpes.
+
+
+          Desde acá recorremos Europa buscando nuevas marcas y equipamiento de montaña.
+
+          Equipamiento que nos entusiasma. Marcas en las que creemos. Y muchas ganas de llevar un poco de los Alpes a Argentina.
         </p>
       </div>
     </section>
@@ -494,7 +498,7 @@ function LocalPresence() {
 
 function FAQ() {
   const items = [
-    { q: "¿Cómo elijo mi ski?", a: "Contanos dónde esquías, cómo esquías y qué querés hacer la próxima temporada. Vinculamos terreno, estilo y peso — no categorías de marketing." },
+     { q: "¿Cómo elijo mi ski?", a: "Contanos dónde esquías, cómo esquías y qué querés hacer la próxima temporada. Vinculamos terreno, estilo y peso para darte la mejor opción." },
     { q: "¿Qué largo me conviene?", a: "Como guía general, para una travesía clásica se recomienda un largo entre 10 y 15 cm menos que la altura del esquiador, para un uso versátil entre 5 y 10 cm menos, y para freetouring o un uso más enfocado en la bajada entre 0 y 5 cm menos. \n\n\nSi priorizás la subida, la ligereza y la maniobrabilidad, conviene elegir un ski más corto; en cambio, si buscás más estabilidad, apoyo y mejor rendimiento en bajada, conviene un ski más largo. \n\n\nTambién es importante tener en cuenta el peso: una persona más liviana puede usar un ski un poco más corto, mientras que una persona más pesada suele beneficiarse de un poco más de largo para ganar apoyo y estabilidad." },
     { q: "¿Cómo elijo el ancho?", a: "El ancho del patín es la medida del ski en su parte más angosta, debajo de la bota. Se expresa en milímetros y cambia mucho cómo se comporta el ski.\n\nEl número que sigue al nombre del modelo indica el ancho del patín.\nPor ejemplo, un ski de entre 85 y 95 mm de ancho de patín es ligero, rápido y eficiente en subida. Suele ir mejor en travesías largas, terreno duro, primavera, nieve compacta o cuando querés ahorrar energía.\n\nEn cambio un ski de 115 mm de ancho de patín te da mucha más flotación en polvo y una sensación más estable y surfy en bajada, sobre todo en nieve profunda. Es más orientado al freerando o a priorizar el descenso. La contra es que pesa más, suele cansar más en la subida, puede ser menos preciso en nieve dura y exige más pierna." },
     { q: "¿Tienen stock en Argentina?", a: "Sí. Mantenemos un stock en Argentina. Los esquíes se pueden probar en San Martín de los Andes y el Chaltén. También tenemos nuestro depósito en Buenos Aires desde donde despachamos algunos de los pedidos." },
@@ -510,7 +514,7 @@ function FAQ() {
             <SectionLabel n="V" label="Preguntas frecuentes" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
-            Preguntas que respondemos todas las semanas.
+            Para tener en cuenta.
           </h2>
         </div>
 
@@ -548,7 +552,7 @@ function FinalCTA() {
       <div className="container-editorial py-20 text-center md:py-28">
         <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">— Hablemos</span>
         <h2 className="mx-auto mt-6 max-w-[18ch] text-[32px] font-bold leading-[1] tracking-tighter md:text-[64px]">
-          ¿Dónde esquías?
+          ¿Dónde esquiás?
         </h2>
         <p className="mx-auto mt-6 max-w-[42ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[17px]">
           ¡Contanos y te ayudamos a elegir el equipo adecuado!
@@ -574,7 +578,7 @@ function Footer() {
       <div className="container-editorial py-14">
         <div className="grid grid-cols-12 items-start gap-8">
           <div className="col-span-12 md:col-span-6">
-            <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">Patagonia SkiMo</p>
+            <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">Patagonia Skimo</p>
             <p className="mt-3 text-[12px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
               De Suiza. A Argentina. Pasión por la montaña.
             </p>
