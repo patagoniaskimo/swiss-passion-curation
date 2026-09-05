@@ -159,7 +159,7 @@ function Founders() {
       <div className="container-editorial py-12 md:py-16">
         <SectionLabel n="VI" label="Quiénes somos" />
         <p className="mt-6 max-w-[70ch] text-[15px] leading-[1.65] text-foreground/80 md:text-[17px]">
-          <span className="font-bold text-foreground">Patagonia SkiMo</span> nace de dos amigos argentinos que viven en Suiza.
+          <span className="font-bold text-foreground">Patagonia Skimo</span> nace de dos amigos argentinos que viven en Suiza.
           Pasamos el año buscando el mejor equipamiento de montaña en Europa para traerlo a Argentina.
           Esquiamos lo que recomendamos y respondemos por cada equipo.
         </p>
@@ -510,7 +510,7 @@ function FAQ() {
             <SectionLabel n="V" label="Preguntas frecuentes" />
           </div>
           <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
-            Preguntas que respondemos todas las semanas.
+            Para tener en cuenta.
           </h2>
         </div>
 
@@ -548,7 +548,7 @@ function FinalCTA() {
       <div className="container-editorial py-20 text-center md:py-28">
         <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">— Hablemos</span>
         <h2 className="mx-auto mt-6 max-w-[18ch] text-[32px] font-bold leading-[1] tracking-tighter md:text-[64px]">
-          ¿Dónde esquías?
+          ¿Dónde esquiás?
         </h2>
         <p className="mx-auto mt-6 max-w-[42ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[17px]">
           ¡Contanos y te ayudamos a elegir el equipo adecuado!
@@ -574,7 +574,7 @@ function Footer() {
       <div className="container-editorial py-14">
         <div className="grid grid-cols-12 items-start gap-8">
           <div className="col-span-12 md:col-span-6">
-            <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">Patagonia SkiMo</p>
+            <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">Patagonia Skimo</p>
             <p className="mt-3 text-[12px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
               De Suiza. A Argentina. Pasión por la montaña.
             </p>
