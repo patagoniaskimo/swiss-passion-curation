@@ -548,10 +548,10 @@ function FinalCTA() {
       <div className="container-editorial py-20 text-center md:py-28">
         <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">— Hablemos</span>
         <h2 className="mx-auto mt-6 max-w-[18ch] text-[32px] font-bold leading-[1] tracking-tighter md:text-[64px]">
-          ¿Todavía no sabés qué equipo te conviene?
+          ¿Dónde esquías?
         </h2>
         <p className="mx-auto mt-6 max-w-[42ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[17px]">
-          Contanos dónde esquías. Te ayudamos a elegir el equipo adecuado.
+          ¡Contanos y te ayudamos a elegir el equipo adecuado!
         </p>
         <div className="mt-10">
           <a
