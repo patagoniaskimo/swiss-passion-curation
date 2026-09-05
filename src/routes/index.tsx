@@ -586,7 +586,7 @@ function FAQ() {
     { q: "¿Cómo elijo el ancho?", a: "El ancho del patín es la medida del ski en su parte más angosta, debajo de la bota. Se expresa en milímetros y cambia mucho cómo se comporta el ski.\n\nEl número que sigue al nombre del modelo indica el ancho del patín.\nPor ejemplo, un ski de entre 85 y 95 mm de ancho de patín es ligero, rápido y eficiente en subida. Suele ir mejor en travesías largas, terreno duro, primavera, nieve compacta o cuando querés ahorrar energía.\n\nEn cambio un ski de 115 mm de ancho de patín te da mucha más flotación en polvo y una sensación más estable y surfy en bajada, sobre todo en nieve profunda. Es más orientado al freerando o a priorizar el descenso. La contra es que pesa más, suele cansar más en la subida, puede ser menos preciso en nieve dura y exige más pierna." },
     { q: "¿Tienen stock en Argentina?", a: "Sí. Mantenemos un stock en Argentina. Los esquíes se pueden probar en San Martín de los Andes y el Chaltén. También tenemos nuestro depósito en Buenos Aires desde donde despachamos algunos de los pedidos." },
     { q: "¿Los productos tienen garantía?", a: "Cada producto lleva la garantía oficial del fabricante. Nosotros gestionamos el proceso con la marca por vos." },
-    { q: "¿Me ayudan a elegir?", a: "De eso se trata. Iniciá una conversación por WhatsApp y nosotros nos ocupamos del resto." },
+    { q: "¿Me ayudan a elegir?", a: "De eso se trata. Iniciá una conversación por WhatsApp y nosotros te guiamos en la búsqueda de tu equipo ideal!" },
   ];
   const [open, setOpen] = useState<number | null>(0);
   return (
