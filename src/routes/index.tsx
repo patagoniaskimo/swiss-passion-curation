@@ -416,7 +416,7 @@ function Products() {
                 />
               </div>
               <h3 className="mt-6 text-[20px] font-bold tracking-tighter md:text-[22px]">{p.name}</h3>
-              <p className="mt-3 text-[14px] leading-[1.55] text-foreground/75">{p.desc}</p>
+              <p className="mt-3 text-[14px] leading-[1.55] whitespace-pre-line text-foreground/75">{p.desc}</p>
 
               <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 border-t border-border pt-4 text-[12px]">
                 {p.specs.map((s) => (
