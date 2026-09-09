@@ -475,18 +475,21 @@ function LocalPresence() {
                 { city: "San Martín de los Andes", partner: "Chilco Experiencias", href: "https://www.chilcoexperiencias.com" },
                 { city: "El Chaltén", partner: "Alpine Patagonia", href: "https://www.alpinepatagonia.com" },
               ].map((p) => (
-                <div key={p.city} className="border-t border-foreground pt-4">
+                <a
+                  key={p.city}
+                  href={p.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="group block border border-foreground/20 p-5 transition-colors hover:bg-foreground hover:text-background"
+                >
                   <p className="text-[18px] font-bold tracking-tighter md:text-[20px]">{p.city}</p>
-                  <p className="text-[18px] font-bold tracking-tighter text-muted-foreground md:text-[20px]">{p.partner}</p>
-                  <a
-                    href={p.href}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="mt-1 inline-block text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
-                  >
+                  <p className="text-[18px] font-bold tracking-tighter text-muted-foreground group-hover:text-background/80 md:text-[20px]">
+                    {p.partner}
+                  </p>
+                  <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.2em] underline-offset-4 group-hover:underline">
                     {new URL(p.href).hostname.replace(/^www\./, "").toUpperCase()}
-                  </a>
-                </div>
+                  </p>
+                </a>
               ))}
             </div>
           </div>
