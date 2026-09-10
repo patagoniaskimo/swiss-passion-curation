@@ -55,7 +55,6 @@ function Nav() {
   const [open, setOpen] = useState(false);
   const links = [
     { label: "Productos", href: "#selection" },
-    { label: "Marcas", href: "#brands" },
     { label: "Preguntas frecuentes", href: "#faq" },
     { label: "Nosotros", href: "#about" },
   ];
