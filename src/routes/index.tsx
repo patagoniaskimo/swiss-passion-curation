@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL = "https://wa.me/41000000000";
+const WHATSAPP_URL = "https://wa.me/+41772540422";
 
 function WhatsAppIcon({ className = "h-4 w-4" }: { className?: string }) {
   return (
@@ -432,16 +432,6 @@ function Products() {
                 <span className="text-[20px] font-bold tracking-tighter">{p.price}</span>
               </div>
 
-              <div className="mt-5 flex flex-wrap gap-3">
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 bg-foreground px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-swiss-red"
-                >
-                  <WhatsAppIcon className="h-3.5 w-3.5" /> Consultar
-                </a>
-              </div>
             </article>
           ))}
         </div>
