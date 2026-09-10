@@ -427,7 +427,7 @@ function Products() {
                 ))}
               </dl>
 
-              <div className="mt-5 flex items-baseline justify-between border-t border-foreground pt-4">
+              <div className="mt-auto flex items-baseline justify-between border-t border-foreground pt-4">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Precio</span>
                 <span className="text-[20px] font-bold tracking-tighter">{p.price}</span>
               </div>
