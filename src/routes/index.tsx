@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL = "https://wa.me/+41782377330";
+const WHATSAPP_URL = "https://wa.me/41782377330";
 
 function WhatsAppIcon({ className = "h-4 w-4" }: { className?: string }) {
   return (
