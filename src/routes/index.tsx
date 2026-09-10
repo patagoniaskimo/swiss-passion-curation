@@ -278,7 +278,7 @@ function Products() {
         { k: "PESO", v: "1760 gr" },
         { k: "PIELES", v: "Incluidas" },
       ],
-      price: "USD 920",
+      price: "USD 890",
     },
     {
       img: product14.url,
