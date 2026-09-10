@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL = "https://wa.me/+41772540422";
+const WHATSAPP_URL = "https://wa.me/+41782377330";
 
 function WhatsAppIcon({ className = "h-4 w-4" }: { className?: string }) {
   return (
@@ -578,7 +578,7 @@ function Footer() {
           <div className="col-span-6 md:col-span-3">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Contacto</p>
             <ul className="mt-4 space-y-2 text-[14px]">
-               <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:underline">{"WhatsApp: +41772540422\n\n\n\n"}</a></li>
+               <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:underline">{"WhatsApp: +41782377330\n\n\n\n"}</a></li>
                <li><a href="mailto:nieve@patagoniaskimo.com" className="hover:underline">nieve@patagoniaskimo.com</a></li>
                <li><a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:underline">www.instagram.com/patagoniaskimo/</a></li>
             </ul>
