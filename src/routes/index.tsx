@@ -1,24 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import logoUrl from "@/assets/patagonia-skimo-hero.png";
-import product9 from "@/assets/product-9.png.asset.json";
-import product10 from "@/assets/product-10.png.asset.json";
-import product11 from "@/assets/product-11.png.asset.json";
-import product12 from "@/assets/product-12.png.asset.json";
-import product13 from "@/assets/product-13.png.asset.json";
-import product14 from "@/assets/product-14.png.asset.json";
-import product15 from "@/assets/product-15.png.asset.json";
-import product16 from "@/assets/product-16.png.asset.json";
-import product17 from "@/assets/product-17.png.asset.json";
-import product18 from "@/assets/product-18.png.asset.json";
-import product19 from "@/assets/product-19.png.asset.json";
-import product20 from "@/assets/product-20.png.asset.json";
-import product21 from "@/assets/product-21.png.asset.json";
-import brandMovement from "@/assets/brand-movement.png.asset.json";
-import brandColltex from "@/assets/brand-colltex.png.asset.json";
-import brandMarker from "@/assets/brand-marker.png.asset.json";
-import brandPlum from "@/assets/brand-plum.png.asset.json";
-import brandMendiboard from "@/assets/brand-mendiboard.png.asset.json";
+import product9 from "@/assets/product-9.png";
+import product10 from "@/assets/product-10.png";
+import product11 from "@/assets/product-11.png";
+import product12 from "@/assets/product-12.png";
+import product13 from "@/assets/product-13.png";
+import product14 from "@/assets/product-14.png";
+import product15 from "@/assets/product-15.png";
+import product16 from "@/assets/product-16.png";
+import product17 from "@/assets/product-17.png";
+import product18 from "@/assets/product-18.png";
+import product19 from "@/assets/product-19.png";
+import product20 from "@/assets/product-20.png";
+import product21 from "@/assets/product-21.png";
+import brandMovement from "@/assets/brand-movement.png";
+import brandColltex from "@/assets/brand-colltex.png";
+import brandMarker from "@/assets/brand-marker.png";
+import brandPlum from "@/assets/brand-plum.png";
+import brandMendiboard from "@/assets/brand-mendiboard.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -173,11 +173,11 @@ function Founders() {
 
 function Brands() {
   const brands = [
-    { name: "Movement", logo: brandMovement.url, href: "https://movementskis.com" },
-    { name: "Colltex", logo: brandColltex.url, href: "https://www.colltex.ch" },
-    { name: "Marker", logo: brandMarker.url, href: "https://markerbindings.com" },
-    { name: "PLUM", logo: brandPlum.url, href: "https://www.fixation-plum.com" },
-    { name: "Mendiboard", logo: brandMendiboard.url, href: "https://mendiboard.com" },
+    { name: "Movement", logo: brandMovement, href: "https://movementskis.com" },
+    { name: "Colltex", logo: brandColltex, href: "https://www.colltex.ch" },
+    { name: "Marker", logo: brandMarker, href: "https://markerbindings.com" },
+    { name: "PLUM", logo: brandPlum, href: "https://www.fixation-plum.com" },
+    { name: "Mendiboard", logo: brandMendiboard, href: "https://mendiboard.com" },
   ];
   return (
     <section id="brands" className="border-b border-border">
@@ -216,7 +216,7 @@ function Brands() {
 function Products() {
   const products = [
     {
-      img: product9.url,
+      img: product9,
       cat: "Esquís",
       name: "Movement Session 90",
       desc: "Touring aventurero con gran equilibrio entre subida y bajada.\nLigero pero robusto, pensado para explorar con confianza tanto cerca como lejos. Es una de las opciones más completas para uso diario en travesía, con muy buena relación entre eficiencia y disfrute en descenso.",
@@ -229,7 +229,7 @@ function Products() {
       price: "USD 920",
     },
     {
-      img: product10.url,
+      img: product10,
       cat: "Esquís",
       name: "Movement Session 95 W",
       desc: "Touring aventurero con gran equilibrio entre subida y bajada.\nLigero pero robusto, pensado para explorar con confianza tanto cerca como lejos. Es una de las opciones más completas para uso diario en travesía, con muy buena relación entre eficiencia y disfrute en descenso.",
@@ -242,7 +242,7 @@ function Products() {
       price: "USD 980",
     },
     {
-      img: product11.url,
+      img: product11,
       cat: "Esquís",
       name: "Movement Session 95",
       desc: "Touring aventurero con gran equilibrio entre subida y bajada.\nLigero pero robusto, pensado para explorar con confianza tanto cerca como lejos. Es una de las opciones más completas para uso diario en travesía, con muy buena relación entre eficiencia y disfrute en descenso.",
@@ -255,7 +255,7 @@ function Products() {
       price: "USD 980",
     },
     {
-      img: product12.url,
+      img: product12,
       cat: "Esquís",
       name: "Movement Sequence 92",
       desc: "La serie híbrida moderna: touring y all-mountain en un solo ski.\nCombina ligereza, estabilidad y absorción de vibraciones para un uso muy polivalente. Es ideal para quien busca un ski capaz de moverse bien entre travesía, uso mixto y montaña en sentido amplio.",
@@ -268,7 +268,7 @@ function Products() {
       price: "USD 890",
     },
     {
-      img: product13.url,
+      img: product13,
       cat: "Esquís",
       name: "Movement Sequence 98",
       desc: "La serie híbrida moderna: touring y all-mountain en un solo ski.\nCombina ligereza, estabilidad y absorción de vibraciones para un uso muy polivalente. Es ideal para quien busca un ski capaz de moverse bien entre travesía, uso mixto y montaña en sentido amplio.",
@@ -281,7 +281,7 @@ function Products() {
       price: "USD 890",
     },
     {
-      img: product14.url,
+      img: product14,
       cat: "Esquís de travesía",
       name: "Movement Alp Tracks 95",
       desc: "Touring de alto rendimiento, ultraliviano con excelente rendimiento en subida y gran precisión en descenso.\nConstrucción full carbono, pensado para largas travesías y terreno técnico, combinando eficiencia, estabilidad y control.",
@@ -294,7 +294,7 @@ function Products() {
       price: "USD 1070",
     },
     {
-      img: product15.url,
+      img: product15,
       cat: "Splitboard",
       name: "Mendiboard Split",
       desc: "Splitboard artesanal español para acceder al backcountry patagónico. Perfil directional para máxima estabilidad en descenso.",
@@ -307,7 +307,7 @@ function Products() {
       price: "USD 1.200",
     },
     {
-      img: product16.url,
+      img: product16,
       cat: "Botas",
       name: "Movement Freetour Boot",
       desc: "Bota orientada a quienes buscan mayor precisión y soporte en bajada, sin perder capacidad de ascenso. Su construcción está más enfocada al freetouring, con un comportamiento más sólido para esquís anchos y terrenos exigentes.",
@@ -320,7 +320,7 @@ function Products() {
       price: "USD 520",
     },
     {
-      img: product17.url,
+      img: product17,
       cat: "Botas",
       name: "Movement Freetour Boot",
       desc: "Bota orientada a quienes buscan mayor precisión y soporte en bajada, sin perder capacidad de ascenso. Su construcción está más enfocada al freetouring, con un comportamiento más sólido para esquís anchos y terrenos exigentes.",
@@ -333,7 +333,7 @@ function Products() {
       price: "USD 520",
     },
     {
-      img: product18.url,
+      img: product18,
       cat: "Fijaciones",
       name: "PLUM Pin Tech",
       desc: "La KAIRN es la fijación más ligera de la marca con ajuste de liberación DIN frontal y lateral. Gracias a su nuevo diseño, su fácil colocación, sus tres posiciones de alza para la subida y su sistema integrado de compensación, la KAIRN te permite afrontar cualquier montaña con total confianza.",
@@ -346,7 +346,7 @@ function Products() {
       price: "USD 550",
     },
     {
-      img: product19.url,
+      img: product19,
       cat: "Fijaciones splitboard",
       name: "PLUM Eterlou",
       desc: "La ETERLOU es una fijación de splitboard diseñada para el backcountry puro. Cómoda, robusta y precisa, sin resultar demasiado exigente, es ideal para quienes buscan una fijación divertida y versátil en todo tipo de terrenos de montaña.",
@@ -359,7 +359,7 @@ function Products() {
       price: "USD 600",
     },
     {
-      img: product20.url,
+      img: product20,
       cat: "Cascos",
       name: "Movement 3Tech Alpi Honeycomb",
       desc: "Casco multifunción certificado para ski, ciclismo y montañismo. Ligero, cómodo y seguro, incorpora refuerzos laterales ABS y un sistema de ventilación tipo panal para un excelente rendimiento. Incluye dos interiores intercambiables: uno liviano para verano y otro acolchado para invierno.",
@@ -372,7 +372,7 @@ function Products() {
       price: "USD 100",
     },
     {
-      img: product21.url,
+      img: product21,
       cat: "Cascos",
       name: "Movement 3Tech Alpi Honeycomb",
       desc: "Casco multifunción certificado para ski, ciclismo y montañismo. Ligero, cómodo y seguro, incorpora refuerzos laterales ABS y un sistema de ventilación tipo panal para un excelente rendimiento. Incluye dos interiores intercambiables: uno liviano para verano y otro acolchado para invierno.",
