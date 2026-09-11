@@ -575,19 +575,18 @@ function Footer() {
               De Suiza. A Argentina. Pasión por la montaña.
             </p>
           </div>
-          <div className="col-span-6 md:col-span-3">
+          <div className="col-span-12 sm:col-span-6 md:col-span-3">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Contacto</p>
             <ul className="mt-4 space-y-2 text-[14px]">
-               <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hover:underline">{"WhatsApp: +41782377330\n\n\n\n"}</a></li>
-               <li><a href="mailto:nieve@patagoniaskimo.com" className="hover:underline">nieve@patagoniaskimo.com</a></li>
-               <li><a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:underline">www.instagram.com/patagoniaskimo/</a></li>
+               <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="break-words hover:underline">WhatsApp: +41782377330</a></li>
+               <li><a href="mailto:nieve@patagoniaskimo.com" className="break-words hover:underline">nieve@patagoniaskimo.com</a></li>
+               <li><a href="https://instagram.com/patagoniaskimo" target="_blank" rel="noreferrer" className="break-words hover:underline">www.instagram.com/patagoniaskimo/</a></li>
             </ul>
           </div>
-          <div className="col-span-6 md:col-span-3">
+          <div className="col-span-12 sm:col-span-6 md:col-span-3">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Ubicaciones</p>
             <ul className="mt-4 space-y-2 text-[14px]">
               <li>Verbier, Suiza</li>
-               <li>{"\n"}</li>
                <li>San Martín de los Andes, Argentina</li>
                <li>El Chaltén, Argentina</li>
             </ul>
