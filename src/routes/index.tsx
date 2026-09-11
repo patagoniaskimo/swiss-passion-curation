@@ -14,8 +14,6 @@ import product18 from "@/assets/product-18.png.asset.json";
 import product19 from "@/assets/product-19.png.asset.json";
 import product20 from "@/assets/product-20.png.asset.json";
 import product21 from "@/assets/product-21.png.asset.json";
-import session90w from "@/assets/session-90-w.png.asset.json";
-import session95 from "@/assets/session-95.png.asset.json";
 import brandMovement from "@/assets/brand-movement.png.asset.json";
 import brandColltex from "@/assets/brand-colltex.png.asset.json";
 import brandMarker from "@/assets/brand-marker.png.asset.json";
@@ -218,7 +216,7 @@ function Brands() {
 function Products() {
   const products = [
     {
-      img: session90w.url,
+      img: product9.url,
       cat: "Esquís",
       name: "Movement Session 90",
       desc: "Touring aventurero con gran equilibrio entre subida y bajada.\nLigero pero robusto, pensado para explorar con confianza tanto cerca como lejos. Es una de las opciones más completas para uso diario en travesía, con muy buena relación entre eficiencia y disfrute en descenso.",
@@ -244,7 +242,7 @@ function Products() {
       price: "USD 980",
     },
     {
-      img: session95.url,
+      img: product11.url,
       cat: "Esquís",
       name: "Movement Session 95",
       desc: "Touring aventurero con gran equilibrio entre subida y bajada.\nLigero pero robusto, pensado para explorar con confianza tanto cerca como lejos. Es una de las opciones más completas para uso diario en travesía, con muy buena relación entre eficiencia y disfrute en descenso.",
