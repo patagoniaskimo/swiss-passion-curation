@@ -122,7 +122,7 @@ function Hero() {
   return (
     <section id="top" className="border-b border-border">
       <div className="container-editorial py-10 md:py-14">
-        <div className="grid grid-cols-12 gap-8 md:gap-6">
+        <div className="grid grid-cols-12 items-start gap-8 md:gap-6">
           <div className="col-span-12 md:col-span-5">
             <img
               src={logoUrl}
