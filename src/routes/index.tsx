@@ -121,27 +121,29 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="container-editorial py-10 md:py-14">
-        <div className="grid grid-cols-12 items-start gap-8 md:gap-6">
-          <div className="col-span-12 md:col-span-5">
+      <div className="container-editorial py-12 md:py-20">
+        <div className="grid min-h-[360px] grid-cols-1 items-center gap-10 md:min-h-[400px] md:grid-cols-2 md:gap-16">
+          <div className="flex items-center justify-center">
             <img
               src={logoUrl}
               alt="Patagonia SkiMo"
               width={1599}
-              height={902}
-              className="w-full object-contain"
+              height={900}
+              className="w-[72%] max-w-[520px] object-contain"
             />
           </div>
 
-          <div className="col-span-12 md:col-span-6 md:col-start-7">
-            <h1 className="max-w-[16ch] text-[36px] font-bold leading-[0.95] tracking-tighter sm:text-[44px] md:text-[60px] md:leading-[0.92]">
-              Equipamiento&nbsp;para
-              <br />
-              ski de travesía.
-            </h1>
-            <p className="mt-6 max-w-[50ch] text-[15px] leading-[1.5] text-foreground/80 md:mt-8 md:text-[16px]">
-              Explora nuestra seleccion de esquís, splitboards, fijaciones, pieles y cascos seleccionados en Europa.
-            </p>
+          <div className="flex items-center">
+            <div>
+              <h1 className="max-w-[16ch] text-[36px] font-bold leading-[0.95] tracking-tighter sm:text-[44px] md:text-[56px] md:leading-[0.92]">
+                Equipamiento&nbsp;para
+                <br />
+                ski de travesía.
+              </h1>
+              <p className="mt-6 max-w-[46ch] text-[15px] leading-[1.5] text-foreground/80 md:mt-8 md:text-[16px]">
+                Explora nuestra seleccion de esquís, splitboards, fijaciones, pieles y cascos seleccionados en Europa.
+              </p>
+            </div>
           </div>
         </div>
       </div>
