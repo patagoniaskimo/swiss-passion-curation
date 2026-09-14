@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import logoUrl from "@/assets/patagonia-skimo-hero.png";
 import product9 from "@/assets/product-9.png";
 import product10 from "@/assets/product-10.png";
@@ -14,6 +16,10 @@ import product18 from "@/assets/product-18.png";
 import product19 from "@/assets/product-19.png";
 import product20 from "@/assets/product-20.png";
 import product21 from "@/assets/product-21.png";
+import alpTracksDetail1 from "@/assets/alp-tracks-95-detail-1.webp";
+import alpTracksDetail2 from "@/assets/alp-tracks-95-detail-2.webp";
+import alpTracksDetail3 from "@/assets/alp-tracks-95-detail-3.webp";
+import alpTracksDetail4 from "@/assets/alp-tracks-95-detail-4.webp";
 import brandMovement from "@/assets/brand-movement.png";
 import brandColltex from "@/assets/brand-colltex.png";
 import brandMarker from "@/assets/brand-marker.png";
@@ -215,6 +221,91 @@ function Brands() {
 }
 
 
+function ProductImageCarousel({ images, name }: { images: string[]; name: string }) {
+  const [viewportRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const updateSelectedIndex = useCallback(() => {
+    if (emblaApi) setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    updateSelectedIndex();
+    emblaApi.on("select", updateSelectedIndex);
+    emblaApi.on("reInit", updateSelectedIndex);
+    return () => {
+      emblaApi.off("select", updateSelectedIndex);
+      emblaApi.off("reInit", updateSelectedIndex);
+    };
+  }, [emblaApi, updateSelectedIndex]);
+
+  if (images.length === 1) {
+    return (
+      <img
+        src={images[0]}
+        alt={name}
+        width={1200}
+        height={1500}
+        loading="lazy"
+        className="aspect-[4/5] w-full object-contain"
+      />
+    );
+  }
+
+  return (
+    <div className="relative aspect-[4/5] w-full">
+      <div ref={viewportRef} className="h-full overflow-hidden touch-pan-y">
+        <div className="flex h-full">
+          {images.map((image, index) => (
+            <div key={image} className="min-w-0 flex-[0_0_100%]">
+              <img
+                src={image}
+                alt={index === 0 ? name : `${name}, detalle ${index}`}
+                width={1200}
+                height={1500}
+                loading="lazy"
+                draggable={false}
+                className="h-full w-full select-none object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <button
+        type="button"
+        aria-label="Imagen anterior"
+        onClick={() => emblaApi?.scrollPrev()}
+        className="absolute left-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center bg-background/85 text-foreground transition-colors hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground"
+      >
+        <ChevronLeft className="h-4 w-4" aria-hidden />
+      </button>
+      <button
+        type="button"
+        aria-label="Imagen siguiente"
+        onClick={() => emblaApi?.scrollNext()}
+        className="absolute right-3 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center bg-background/85 text-foreground transition-colors hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground"
+      >
+        <ChevronRight className="h-4 w-4" aria-hidden />
+      </button>
+
+      <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 bg-background/85 px-2.5 py-2" aria-label="Seleccionar imagen">
+        {images.map((image, index) => (
+          <button
+            key={image}
+            type="button"
+            aria-label={`Ver imagen ${index + 1} de ${images.length}`}
+            aria-current={selectedIndex === index ? "true" : undefined}
+            onClick={() => emblaApi?.scrollTo(index)}
+            className={`h-1.5 w-1.5 transition-colors ${selectedIndex === index ? "bg-foreground" : "bg-foreground/30 hover:bg-foreground/60"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Products() {
   const products = [
     {
@@ -284,6 +375,7 @@ function Products() {
     },
     {
       img: product14,
+      images: [product14, alpTracksDetail1, alpTracksDetail2, alpTracksDetail3, alpTracksDetail4],
       cat: "Esquís de travesía",
       name: "Movement Alp Tracks 95",
       desc: "Touring de alto rendimiento, ultraliviano con excelente rendimiento en subida y gran precisión en descenso.\nConstrucción full carbono, pensado para largas travesías y terreno técnico, combinando eficiencia, estabilidad y control.",
@@ -407,14 +499,7 @@ function Products() {
                 <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
               </div>
               <div className="mt-6 overflow-hidden bg-secondary">
-                <img
-                  src={p.img}
-                  alt={p.name}
-                  width={1200}
-                  height={1500}
-                  loading="lazy"
-                  className="aspect-[4/5] w-full object-contain"
-                />
+                <ProductImageCarousel images={("images" in p && p.images) || [p.img]} name={p.name} />
               </div>
               <h3 className="mt-6 text-[20px] font-bold tracking-tighter md:text-[22px]">{p.name}</h3>
               <p className="mt-3 text-[14px] leading-[1.55] whitespace-pre-line text-foreground/75">{p.desc}</p>
