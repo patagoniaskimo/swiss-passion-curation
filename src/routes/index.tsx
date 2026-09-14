@@ -141,7 +141,7 @@ function Hero() {
                 ski de travesía.
               </h1>
               <p className="mt-6 max-w-[46ch] text-[15px] leading-[1.5] text-foreground/80 md:mt-8 md:text-[16px]">
-                Explora nuestra seleccion de esquís, splitboards, fijaciones, pieles y cascos seleccionados en Europa.
+                Explora nuestra selección de esquís, splitboards, fijaciones, pieles y cascos seleccionados en Europa.
               </p>
             </div>
           </div>
