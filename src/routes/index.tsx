@@ -486,9 +486,8 @@ function Products() {
           <h2 className="max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
             Nuestros productos
           </h2>
-        </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {products.map((p) => (
             <article key={p.name} className="flex flex-col border-t border-foreground pt-6">
               <div className="flex items-baseline justify-between">
