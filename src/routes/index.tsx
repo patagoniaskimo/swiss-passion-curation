@@ -482,7 +482,8 @@ function Products() {
   ];
   return (
     <section id="selection" className="border-b border-border">
-      <div className="container-editorial py-16 md:py-24">
+        <div className="container-editorial py-16 md:py-24">
+          <h2 className="max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
             Nuestros productos
           </h2>
         </div>
