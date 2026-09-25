@@ -482,17 +482,12 @@ function Products() {
   ];
   return (
     <section id="selection" className="border-b border-border">
-      <div className="container-editorial py-16 md:py-24">
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-12 md:col-span-4">
-            <SectionLabel n="III" label={"\n"} />
-          </div>
-          <h2 className="col-span-12 max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:col-span-8 md:text-[38px]">
+        <div className="container-editorial py-16 md:py-24">
+          <h2 className="max-w-[22ch] text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
             Nuestros productos
           </h2>
-        </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {products.map((p) => (
             <article key={p.name} className="flex flex-col border-t border-foreground pt-6">
               <div className="flex items-baseline justify-between">
