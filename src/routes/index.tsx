@@ -144,10 +144,11 @@ function Hero() {
               <h1 className="max-w-[16ch] text-[36px] font-bold leading-[0.95] tracking-tighter sm:text-[44px] md:text-[56px] md:leading-[0.92]">
                 Equipamiento&nbsp;para
                 <br />
-                ski de travesía.
+                esquiar Los Andes.
               </h1>
               <p className="mt-6 max-w-[46ch] text-[15px] leading-[1.5] text-foreground/80 md:mt-8 md:text-[16px]">
-                Explora nuestra selección de esquís, splitboards, fijaciones, pieles y cascos seleccionados en Europa.
+                Skis de touring y splitboards seleccionados en Europa. Contamos con stock en Argentina para entrega inmediata.
+
               </p>
             </div>
           </div>
