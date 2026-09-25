@@ -192,9 +192,9 @@ function Brands() {
     <section id="brands" className="border-b border-border">
       <div className="container-editorial py-10 md:py-14">
         <div className="flex flex-wrap items-baseline justify-between gap-4">
-          <SectionLabel n="II" label="Marcas" />
+          <SectionLabel n="II" label="NUESTRAS MARCAS" />
           <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
-            Selección curada desde Europa
+            {"\n"}
           </span>
         </div>
         <div className="mt-8 grid grid-cols-2 items-center gap-6 sm:grid-cols-3 md:grid-cols-5 md:gap-10">
