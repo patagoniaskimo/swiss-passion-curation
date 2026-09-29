@@ -428,7 +428,7 @@ function Products() {
     {
       img: product18,
       cat: "Fijaciones",
-      name: "PLUM Pin Tech",
+      name: "PLUM Kairn 12",
       desc: "La KAIRN es la fijación más ligera de la marca con ajuste de liberación DIN frontal y lateral. Gracias a su nuevo diseño, su fácil colocación, sus tres posiciones de alza para la subida y su sistema integrado de compensación, la KAIRN te permite afrontar cualquier montaña con total confianza.",
       specs: [
         { k: "Tipo", v: "Pin / Tech" },
