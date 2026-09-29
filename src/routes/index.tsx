@@ -25,6 +25,8 @@ import brandColltex from "@/assets/brand-colltex.png";
 import brandMarker from "@/assets/brand-marker.png";
 import brandPlum from "@/assets/brand-plum.png";
 import brandMendiboard from "@/assets/brand-mendiboard.png";
+import chilcoLogo from "@/assets/chilco-logo.png";
+import alpinePatagoniaLogo from "@/assets/alpine-patagonia-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -573,8 +575,8 @@ function LocalPresence() {
             </p>
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
               {[
-                { city: "San Martín de los Andes", partner: "Chilco Experiencias", href: "https://www.chilcoexperiencias.com" },
-                { city: "El Chaltén", partner: "Alpine Patagonia", href: "https://www.alpinepatagonia.com" },
+                { city: "San Martín de los Andes", partner: "Chilco Experiencias", href: "https://www.chilcoexperiencias.com", logo: chilcoLogo },
+                { city: "El Chaltén", partner: "Alpine Patagonia", href: "https://www.alpinepatagonia.com", logo: alpinePatagoniaLogo },
               ].map((p) => (
                 <a
                   key={p.city}
@@ -583,6 +585,9 @@ function LocalPresence() {
                   rel="noreferrer noopener"
                   className="group block border border-foreground/20 p-5 transition-colors hover:bg-foreground hover:text-background"
                 >
+                  <div className="mb-4 flex h-16 items-center">
+                    <img src={p.logo} alt={p.partner} className="max-h-16 w-auto object-contain transition-opacity group-hover:opacity-90" />
+                  </div>
                   <p className="text-[18px] font-bold tracking-tighter md:text-[20px]">{p.city}</p>
                   <p className="text-[18px] font-bold tracking-tighter text-muted-foreground group-hover:text-background/80 md:text-[20px]">
                     {p.partner}
