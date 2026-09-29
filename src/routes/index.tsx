@@ -465,7 +465,7 @@ function Products() {
       specs: [
         { k: "Certificación", v: "Ski + Alpinismo" },
         { k: "Tecnología", v: "Honeycomb 3 Functions" },
-        { k: "Talles", v: "XS-M / M-L" },
+        { k: "Talles", v: "M (56-58cm), L (58-60cm)" },
         { k: "Color", v: "Blanco / gris / azul" },
       ],
       price: "USD 135",
@@ -478,7 +478,7 @@ function Products() {
       specs: [
         { k: "Certificación", v: "Ski + Alpinismo" },
         { k: "Tecnología", v: "Honeycomb 3 Functions" },
-        { k: "Talles", v: "XS-M / M-L" },
+        { k: "Talles", v: "XS-S (52-56cm), M (56-58cm), L (58-60cm)" },
         { k: "Color", v: "Blanco / gris / naranja" },
       ],
       price: "USD 135",
