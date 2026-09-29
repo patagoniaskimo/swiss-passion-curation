@@ -311,6 +311,7 @@ function Products() {
       img: product9,
       cat: "Esquís",
       name: "Movement Session 90",
+      flex: { value: "6/7", level: 6.5 },
       desc: "Touring aventurero con gran equilibrio entre subida y bajada.\nLigero pero robusto, pensado para explorar con confianza tanto cerca como lejos. Es una de las opciones más completas para uso diario en travesía, con muy buena relación entre eficiencia y disfrute en descenso.",
       specs: [
         { k: "ANCHO DE PATIN", v: "90 mm" },
@@ -324,6 +325,7 @@ function Products() {
       img: product10,
       cat: "Esquís",
       name: "Movement Session 95 W",
+      flex: { value: "6/7", level: 6.5 },
       desc: "Touring aventurero con gran equilibrio entre subida y bajada.\nLigero pero robusto, pensado para explorar con confianza tanto cerca como lejos. Es una de las opciones más completas para uso diario en travesía, con muy buena relación entre eficiencia y disfrute en descenso.",
       specs: [
         { k: "ANCHO DE PATIN", v: "95 mm" },
@@ -337,6 +339,7 @@ function Products() {
       img: product11,
       cat: "Esquís",
       name: "Movement Session 95",
+      flex: { value: "6/7", level: 6.5 },
       desc: "Touring aventurero con gran equilibrio entre subida y bajada.\nLigero pero robusto, pensado para explorar con confianza tanto cerca como lejos. Es una de las opciones más completas para uso diario en travesía, con muy buena relación entre eficiencia y disfrute en descenso.",
       specs: [
         { k: "ANCHO DE PATIN", v: "95 mm" },
@@ -350,6 +353,7 @@ function Products() {
       img: product12,
       cat: "Esquís",
       name: "Movement Sequence 92",
+      flex: { value: "8", level: 8 },
       desc: "La serie híbrida moderna: touring y all-mountain en un solo ski.\nCombina ligereza, estabilidad y absorción de vibraciones para un uso muy polivalente. Es ideal para quien busca un ski capaz de moverse bien entre travesía, uso mixto y montaña en sentido amplio.",
       specs: [
         { k: "ANCHO DE PATIN", v: "92 mm" },
@@ -363,6 +367,7 @@ function Products() {
       img: product13,
       cat: "Esquís",
       name: "Movement Sequence 98",
+      flex: { value: "8", level: 8 },
       desc: "La serie híbrida moderna: touring y all-mountain en un solo ski.\nCombina ligereza, estabilidad y absorción de vibraciones para un uso muy polivalente. Es ideal para quien busca un ski capaz de moverse bien entre travesía, uso mixto y montaña en sentido amplio.",
       specs: [
         { k: "ANCHO DE PATIN", v: "98 mm" },
@@ -377,6 +382,7 @@ function Products() {
       images: [product14, alpTracksDetail1, alpTracksDetail2, alpTracksDetail3, alpTracksDetail4],
       cat: "Esquís de travesía",
       name: "Movement Alp Tracks 95",
+      flex: { value: "10", level: 10 },
       desc: "Touring de alto rendimiento, ultraliviano con excelente rendimiento en subida y gran precisión en descenso.\nConstrucción full carbono, pensado para largas travesías y terreno técnico, combinando eficiencia, estabilidad y control.",
       specs: [
         { k: "ANCHO DE PATIN", v: "95 mm" },
@@ -508,6 +514,28 @@ function Products() {
                     <dd className="mt-0.5 font-medium">{s.v}</dd>
                   </div>
                 ))}
+                {"flex" in p && p.flex && (
+                  <div className="col-span-2 flex flex-col">
+                    <dt className="font-semibold uppercase tracking-[0.14em] text-muted-foreground">Flex</dt>
+                    <dd className="mt-1 flex items-center gap-3">
+                      <span className="flex gap-1" aria-hidden>
+                        {Array.from({ length: 10 }).map((_, i) => (
+                          <span
+                            key={i}
+                            className={`h-1 w-4 ${
+                              p.flex!.level >= i + 1
+                                ? "bg-foreground"
+                                : p.flex!.level > i
+                                  ? "bg-foreground/50"
+                                  : "bg-foreground/20"
+                            }`}
+                          />
+                        ))}
+                      </span>
+                      <span className="text-[11px] font-semibold uppercase tracking-[0.14em]">{p.flex.value}</span>
+                    </dd>
+                  </div>
+                )}
               </dl>
 
               <div className="mt-auto flex items-baseline justify-between border-t border-foreground pt-4">
