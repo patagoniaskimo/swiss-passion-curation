@@ -17,6 +17,7 @@ import product19 from "@/assets/product-19.png";
 import product20 from "@/assets/product-20.png";
 import product21 from "@/assets/product-21.png";
 import product22 from "@/assets/product-22.png";
+import product23 from "@/assets/product-23.png";
 import helmetDetail1 from "@/assets/helmet-0822.jpg";
 import helmetDetail2 from "@/assets/helmet-0810.jpg";
 import helmetDetail3 from "@/assets/helmet-0811.jpg";
@@ -466,7 +467,8 @@ function Products() {
       price: "USD 520",
     },
     {
-      img: product19,
+      img: product23,
+      images: [product23, product19],
       cat: "Fijaciones splitboard",
       name: "PLUM Eterlou",
       desc: "La ETERLOU es una fijación de splitboard diseñada para el backcountry puro. Cómoda, robusta y precisa, sin resultar demasiado exigente, es ideal para quienes buscan una fijación divertida y versátil en todo tipo de terrenos de montaña.",
