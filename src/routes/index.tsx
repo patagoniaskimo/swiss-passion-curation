@@ -399,7 +399,7 @@ function Products() {
         { k: "PIELES", v: "Incluidas" },
         { k: "FLEX", v: "7/10" },
       ],
-      price: "USD 1.200",
+      price: "USD 850",
     },
     {
       img: product16,
@@ -457,7 +457,7 @@ function Products() {
       img: product20,
       cat: "Cascos",
       name: "Movement 3Tech Alpi Honeycomb",
-      desc: "Casco multifunción certificado para ski, ciclismo y montañismo. Ligero, cómodo y seguro, incorpora refuerzos laterales ABS y un sistema de ventilación tipo panal para un excelente rendimiento. Incluye dos interiores intercambiables: uno liviano para verano y otro acolchado para invierno.",
+      desc: "Casco multifunción certificado para ski, ciclismo y montañismo. Ligero, cómodo y seguro, incorpora refuerzos laterales ABS y un sistema de ventilación tipo panal para un excelente rendimiento. Incluye dos interiores intercambiables: uno liviano para verano y otro acolchado para invierno.\nIncluye un sistema de ajuste trasero con perilla, para un calce cómodo y seguro.\n",
       specs: [
         { k: "Certificación", v: "Ski + Alpinismo" },
         { k: "Tecnología", v: "Honeycomb 3 Functions" },
@@ -470,7 +470,7 @@ function Products() {
       img: product21,
       cat: "Cascos",
       name: "Movement 3Tech Alpi Honeycomb",
-      desc: "Casco multifunción certificado para ski, ciclismo y montañismo. Ligero, cómodo y seguro, incorpora refuerzos laterales ABS y un sistema de ventilación tipo panal para un excelente rendimiento. Incluye dos interiores intercambiables: uno liviano para verano y otro acolchado para invierno.",
+      desc: "Casco multifunción certificado para ski, ciclismo y montañismo. Ligero, cómodo y seguro, incorpora refuerzos laterales ABS y un sistema de ventilación tipo panal para un excelente rendimiento. Incluye dos interiores intercambiables: uno liviano para verano y otro acolchado para invierno.\nIncluye un sistema de ajuste trasero con perilla, para un calce cómodo y seguro.\n",
       specs: [
         { k: "Certificación", v: "Ski + Alpinismo" },
         { k: "Tecnología", v: "Honeycomb 3 Functions" },
