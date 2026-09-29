@@ -259,7 +259,7 @@ function HowToBuy() {
   );
 }
 
-
+function ProductImageCarousel({ images, name }: { images: string[]; name: string }) {
   const [viewportRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
