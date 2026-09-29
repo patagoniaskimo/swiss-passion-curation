@@ -56,6 +56,7 @@ function Index() {
       <Nav />
       <Hero />
       <Brands />
+      <HowToBuy />
       <Products />
       <LocalPresence />
       <FAQ />
