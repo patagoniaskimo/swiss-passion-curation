@@ -490,9 +490,12 @@ function Products() {
           <div className="mt-12 grid grid-cols-1 gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {products.map((p) => (
             <article key={p.name} className="flex flex-col border-t border-foreground pt-6">
-              <div className="flex items-baseline justify-between">
+              <div className="flex items-center justify-between">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{p.cat}</span>
-                <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
+                <span className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 bg-swiss-red" aria-hidden />
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">En stock</span>
+                </span>
               </div>
               <div className="mt-6 overflow-hidden bg-secondary">
                 <ProductImageCarousel images={("images" in p && p.images) || [p.img]} name={p.name} />
