@@ -519,8 +519,8 @@ function Products() {
           </h2>
 
           <div className="mt-12 grid grid-cols-1 gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
-          {products.map((p) => (
-            <article key={p.name} className="flex flex-col border-t border-foreground pt-6">
+          {products.map((p, i) => (
+            <article key={`${p.name}-${i}`} className="flex flex-col border-t border-foreground pt-6">
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{p.cat}</span>
                 <span className="flex items-center gap-2">
