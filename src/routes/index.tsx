@@ -664,7 +664,11 @@ function Footer() {
             <ul className="mt-4 space-y-2 text-[14px]">
                <li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="break-words hover:underline">WhatsApp: +41782377330</a></li>
                <li><a href="mailto:nieve@patagoniaskimo.com" className="break-words hover:underline">nieve@patagoniaskimo.com</a></li>
-               <li><a href="https://instagram.com/patagoniaskimo" target="_blank" rel="noreferrer" className="break-words hover:underline">www.instagram.com/patagoniaskimo/</a></li>
+               <li>
+                 <a href="https://instagram.com/patagoniaskimo" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:underline">
+                   ¡Seguinos! <InstagramIcon className="h-4 w-4" />
+                 </a>
+               </li>
             </ul>
           </div>
           <div className="col-span-12 sm:col-span-6 md:col-span-3">
