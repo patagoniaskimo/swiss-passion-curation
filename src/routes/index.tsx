@@ -524,8 +524,8 @@ function Products() {
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{p.cat}</span>
                 <span className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 bg-emerald-600" aria-hidden />
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">En stock</span>
+                  <span className="h-1.5 w-1.5 bg-orange-500" aria-hidden />
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Próximamente</span>
                 </span>
               </div>
               <div className="mt-6 overflow-hidden bg-secondary">
