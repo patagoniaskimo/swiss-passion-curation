@@ -239,7 +239,7 @@ function HowToBuy() {
         <div className="mt-6 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <h2 className="text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
-              ¿Cómo comprar?
+              {"\n"}
             </h2>
             <p className="mt-4 max-w-[52ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[16px]">
               Elegí tus productos y envianos tu pedido por WhatsApp.
