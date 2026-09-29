@@ -466,7 +466,7 @@ function Products() {
         { k: "Din", v: "4 – 10" },
         { k: "Elevadores", v: "2 posiciones (0° / 50°)" },
       ],
-      price: "USD 390",
+      price: "USD 520",
     },
     {
       img: product23,
@@ -525,7 +525,7 @@ function Products() {
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{p.cat}</span>
                 <span className="flex items-center gap-2">
                   <span className={`h-1.5 w-1.5 ${p.name === "PLUM Chouka" ? "bg-orange-500" : "bg-emerald-600"}`} aria-hidden />
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">PRÓXIMAMENTE</span>
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Próximamente</span>
                 </span>
               </div>
               <div className="mt-6 overflow-hidden bg-secondary">
