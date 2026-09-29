@@ -17,6 +17,7 @@ import product19 from "@/assets/product-19.png";
 import product20 from "@/assets/product-20.png";
 import product21 from "@/assets/product-21.png";
 import product22 from "@/assets/product-22.png";
+import choukaCover from "@/assets/product-chouka-cover.png";
 import product23 from "@/assets/product-23.png";
 import helmetDetail1 from "@/assets/helmet-0822.jpg";
 import helmetDetail2 from "@/assets/helmet-0810.jpg";
@@ -454,7 +455,8 @@ function Products() {
       price: "USD 550",
     },
     {
-      img: product22,
+      img: choukaCover,
+      images: [choukaCover, product22],
       cat: "Fijaciones",
       name: "PLUM Chouka",
       desc: "La CHOUKA combina la pinza delantera de la Guide, reconocida por su robustez, con la trasera de la Pika, destacada por su comodidad y ligereza. Una fijación versátil y accesible, 100% fabricada en Francia, con tecnología \"Too Facile\" para una colocación intuitiva y precisa de la bota.",
