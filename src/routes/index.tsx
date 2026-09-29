@@ -16,6 +16,11 @@ import product18 from "@/assets/product-18.png";
 import product19 from "@/assets/product-19.png";
 import product20 from "@/assets/product-20.png";
 import product21 from "@/assets/product-21.png";
+import helmetDetail1 from "@/assets/helmet-0822.jpg";
+import helmetDetail2 from "@/assets/helmet-0810.jpg";
+import helmetDetail3 from "@/assets/helmet-0811.jpg";
+import helmetDetail4 from "@/assets/helmet-0816.jpg";
+import helmetDetail5 from "@/assets/helmet-0821.jpg";
 import alpTracksDetail1 from "@/assets/alp-tracks-95-detail-1.webp";
 import alpTracksDetail2 from "@/assets/alp-tracks-95-detail-2.webp";
 import alpTracksDetail3 from "@/assets/alp-tracks-95-detail-3.webp";
@@ -461,6 +466,7 @@ function Products() {
     },
     {
       img: product20,
+      images: [product20, helmetDetail1, helmetDetail2, helmetDetail3, helmetDetail4, helmetDetail5],
       cat: "Cascos",
       name: "Movement 3Tech Alpi Honeycomb",
       desc: "Casco multifunción certificado para ski, ciclismo y montañismo. Ligero, cómodo y seguro, incorpora refuerzos laterales ABS y un sistema de ventilación tipo panal para un excelente rendimiento. Incluye dos interiores intercambiables: uno liviano para verano y otro acolchado para invierno.\nIncluye un sistema de ajuste trasero con perilla, para un calce cómodo y seguro.\n",
@@ -474,6 +480,7 @@ function Products() {
     },
     {
       img: product21,
+      images: [product21, helmetDetail1, helmetDetail2, helmetDetail3, helmetDetail4, helmetDetail5],
       cat: "Cascos",
       name: "Movement 3Tech Alpi Honeycomb",
       desc: "Casco multifunción certificado para ski, ciclismo y montañismo. Ligero, cómodo y seguro, incorpora refuerzos laterales ABS y un sistema de ventilación tipo panal para un excelente rendimiento. Incluye dos interiores intercambiables: uno liviano para verano y otro acolchado para invierno.\nIncluye un sistema de ajuste trasero con perilla, para un calce cómodo y seguro.\n",
