@@ -12,6 +12,13 @@ import product14 from "@/assets/product-14.png";
 import product15 from "@/assets/product-15.png";
 import product16 from "@/assets/product-16.png";
 import product17 from "@/assets/product-17.png";
+import bootFreetourW1 from "@/assets/boot-freetour-w-1.jpg";
+import bootFreetourW2 from "@/assets/boot-freetour-w-2.jpg";
+import bootFreetourW3 from "@/assets/boot-freetour-w-3.jpg";
+import bootFreetourW4 from "@/assets/boot-freetour-w-4.jpg";
+import bootFreetour1 from "@/assets/boot-freetour-1.jpg";
+import bootFreetour2 from "@/assets/boot-freetour-2.jpg";
+import bootFreetour3 from "@/assets/boot-freetour-3.jpg";
 import product18 from "@/assets/product-18.png";
 import product19 from "@/assets/product-19.png";
 import product20 from "@/assets/product-20.png";
@@ -446,6 +453,7 @@ function Products() {
     },
     {
       img: product16,
+      images: [product16, bootFreetourW1, bootFreetourW2, bootFreetourW3, bootFreetourW4],
       cat: "Botas",
       name: "Movement Freetour Boot",
       desc: "Bota orientada a quienes buscan mayor precisión y soporte en bajada, sin perder capacidad de ascenso. Su construcción está más enfocada al freetouring, con un comportamiento más sólido para esquís anchos y terrenos exigentes.",
@@ -459,6 +467,7 @@ function Products() {
     },
     {
       img: product17,
+      images: [product17, bootFreetour1, bootFreetour2, bootFreetour3],
       cat: "Botas",
       name: "Movement Freetour Boot",
       desc: "Bota orientada a quienes buscan mayor precisión y soporte en bajada, sin perder capacidad de ascenso. Su construcción está más enfocada al freetouring, con un comportamiento más sólido para esquís anchos y terrenos exigentes.",
