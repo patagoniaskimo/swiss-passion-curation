@@ -333,7 +333,7 @@ function Products() {
         { k: "PESO", v: "1290 gr / 1420 gr" },
         { k: "PIELES", v: "Colltex Hotmelt - Incluidas" },
       ],
-      price: "USD 980",
+      price: "USD 965",
     },
     {
       img: product11,
@@ -346,7 +346,7 @@ function Products() {
         { k: "PESO\u00a0", v: "1550 gr" },
         { k: "PIELES", v: "Colltex Hotmelt - Incluidas" },
       ],
-      price: "USD 980",
+      price: "USD 965",
     },
     {
       img: product12,
@@ -386,7 +386,7 @@ function Products() {
         { k: "PESO", v: "1130 gr / 1190 gr / 1280 gr" },
         { k: "PIELES", v: "Colltex Hotmelt - Incluidas" },
       ],
-      price: "USD 1070",
+      price: "USD 1250",
     },
     {
       img: product15,
@@ -412,7 +412,7 @@ function Products() {
         { k: "TALLES", v: "23.5 / 24.5 / 25.5" },
         { k: "Peso", v: "1180 g (24.5)" },
       ],
-      price: "USD 520",
+      price: "USD 620",
     },
     {
       img: product17,
@@ -425,7 +425,7 @@ function Products() {
         { k: "TALLES", v: "26.5 / 27.5 / 28.5" },
         { k: "Peso", v: "1280 g (26.5)" },
       ],
-      price: "USD 520",
+      price: "USD 620",
     },
     {
       img: product18,
@@ -464,7 +464,7 @@ function Products() {
         { k: "Talles", v: "XS-M / M-L" },
         { k: "Color", v: "Blanco / gris / azul" },
       ],
-      price: "USD 100",
+      price: "USD 135",
     },
     {
       img: product21,
@@ -477,7 +477,7 @@ function Products() {
         { k: "Talles", v: "XS-M / M-L" },
         { k: "Color", v: "Blanco / gris / naranja" },
       ],
-      price: "USD 100",
+      price: "USD 135",
     },
   ];
   return (
