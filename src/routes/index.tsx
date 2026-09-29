@@ -466,7 +466,7 @@ function Products() {
         { k: "Din", v: "4 – 10" },
         { k: "Elevadores", v: "2 posiciones (0° / 50°)" },
       ],
-      price: "USD 390",
+      price: "USD 520",
     },
     {
       img: product23,
