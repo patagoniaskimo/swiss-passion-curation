@@ -230,7 +230,35 @@ function Brands() {
 }
 
 
-function ProductImageCarousel({ images, name }: { images: string[]; name: string }) {
+function HowToBuy() {
+  return (
+    <section id="como-comprar" className="border-b border-border bg-secondary">
+      <div className="container-editorial py-12 md:py-16">
+        <SectionLabel n="III" label="¿CÓMO COMPRAR?" />
+        <div className="mt-6 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 className="text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
+              ¿Cómo comprar?
+            </h2>
+            <p className="mt-4 max-w-[52ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[16px]">
+              Elegí tus productos y envianos tu pedido por WhatsApp.
+            </p>
+          </div>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex shrink-0 items-center gap-2 border border-foreground bg-foreground px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-background transition-colors hover:bg-background hover:text-foreground"
+          >
+            <WhatsAppIcon /> Enviar pedido por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
   const [viewportRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
