@@ -242,7 +242,7 @@ function HowToBuy() {
               {"\n"}
             </h2>
             <p className="mt-4 max-w-[52ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[16px]">
-              Elegí tus productos y envianos tu pedido por WhatsApp.
+              {"Elegí tus productos y envianos tu pedido por WhatsApp.\n\n+41782377330\n+5492215056196"}
             </p>
           </div>
           <a
