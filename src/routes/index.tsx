@@ -16,6 +16,7 @@ import product18 from "@/assets/product-18.png";
 import product19 from "@/assets/product-19.png";
 import product20 from "@/assets/product-20.png";
 import product21 from "@/assets/product-21.png";
+import product22 from "@/assets/product-22.png";
 import helmetDetail1 from "@/assets/helmet-0822.jpg";
 import helmetDetail2 from "@/assets/helmet-0810.jpg";
 import helmetDetail3 from "@/assets/helmet-0811.jpg";
@@ -450,6 +451,19 @@ function Products() {
         { k: "Elevadores", v: "2 posiciones" },
       ],
       price: "USD 550",
+    },
+    {
+      img: product22,
+      cat: "Fijaciones",
+      name: "PLUM Chouka",
+      desc: "La CHOUKA combina la pinza delantera de la Guide, reconocida por su robustez, con la trasera de la Pika, destacada por su comodidad y ligereza. Una fijación versátil y accesible, 100% fabricada en Francia, con tecnología \"Too Facile\" para una colocación intuitiva y precisa de la bota.",
+      specs: [
+        { k: "Tipo", v: "Pin / Tech" },
+        { k: "Peso", v: "290 gr por pie" },
+        { k: "Din", v: "4 – 10" },
+        { k: "Elevadores", v: "2 posiciones (0° / 50°)" },
+      ],
+      price: "USD 520",
     },
     {
       img: product19,
