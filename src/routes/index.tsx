@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Instagram } from "lucide-react";
 import logoUrl from "@/assets/patagonia-skimo-hero.png";
 import product9 from "@/assets/product-9.png";
 import product10 from "@/assets/product-10.png";
@@ -666,7 +666,7 @@ function Footer() {
                <li><a href="mailto:nieve@patagoniaskimo.com" className="break-words hover:underline">nieve@patagoniaskimo.com</a></li>
                <li>
                  <a href="https://instagram.com/patagoniaskimo" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:underline">
-                   ¡Seguinos! <InstagramIcon className="h-4 w-4" />
+                   ¡Seguinos! <Instagram className="h-4 w-4" />
                  </a>
                </li>
             </ul>
