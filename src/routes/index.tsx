@@ -142,7 +142,7 @@ function Hero() {
           <div className="flex items-center">
             <div>
               <h1 className="max-w-[16ch] text-[36px] font-bold leading-[0.95] tracking-tighter sm:text-[44px] md:text-[56px] md:leading-[0.92]">
-                Especialistas en ski de travesía.
+                Tienda especializada en ski de travesía.
               </h1>
               <p className="mt-6 max-w-[46ch] text-[15px] leading-[1.5] text-foreground/80 md:mt-8 md:text-[16px]">
                 Skis de touring y splitboards seleccionados en Europa. Contamos con stock en Argentina para entrega inmediata.
