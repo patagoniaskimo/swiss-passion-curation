@@ -396,12 +396,12 @@ function Products() {
       img: product15,
       cat: "Splitboard",
       name: "Mendiboard Split",
+      flex: { value: "7/10", level: 7 },
       desc: "Splitboard artesanal español para acceder al backcountry patagónico. Perfil directional para máxima estabilidad en descenso.",
       specs: [
         { k: "Largos", v: "154 / 162 cm" },
         { k: "Perfil", v: "Directional Rocker" },
         { k: "PIELES", v: "Incluidas" },
-        { k: "FLEX", v: "7/10" },
       ],
       price: "USD 850",
     },
