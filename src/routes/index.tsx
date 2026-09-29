@@ -459,6 +459,7 @@ function Products() {
       images: [choukaCover, product22],
       cat: "Fijaciones",
       name: "PLUM Chouka",
+      stock: "Próximamente",
       desc: "La CHOUKA combina la pinza delantera de la Guide, reconocida por su robustez, con la trasera de la Pika, destacada por su comodidad y ligereza. Una fijación versátil y accesible, 100% fabricada en Francia, con tecnología \"Too Facile\" para una colocación intuitiva y precisa de la bota.",
       specs: [
         { k: "Tipo", v: "Pin / Tech" },
@@ -524,8 +525,8 @@ function Products() {
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{p.cat}</span>
                 <span className="flex items-center gap-2">
-                  <span className={`h-1.5 w-1.5 ${p.name === "PLUM Chouka" ? "bg-orange-500" : "bg-emerald-600"}`} aria-hidden />
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">EN STOCK</span>
+                  <span className={`h-1.5 w-1.5 ${p.stock === "Próximamente" ? "bg-orange-500" : "bg-emerald-600"}`} aria-hidden />
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{p.stock || "EN STOCK"}</span>
                 </span>
               </div>
               <div className="mt-6 overflow-hidden bg-secondary">
