@@ -399,7 +399,7 @@ function Products() {
         { k: "PIELES", v: "Incluidas" },
         { k: "FLEX", v: "7/10" },
       ],
-      price: "USD 1.200",
+      price: "USD 850",
     },
     {
       img: product16,
