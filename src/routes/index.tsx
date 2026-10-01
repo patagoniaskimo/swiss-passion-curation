@@ -86,7 +86,7 @@ function Nav() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="container-editorial flex h-16 items-center justify-between">
         <a href="#top" className="flex items-baseline gap-2">
-          <span className="text-[15px] font-bold tracking-tighter">Patagonia SkiMo</span>
+          <span className="text-[15px] font-bold tracking-tighter">Patagonia Skimo</span>
           <span className="hidden text-[11px] uppercase tracking-[0.16em] text-muted-foreground sm:inline">
             DESDE SUIZA
           </span>
