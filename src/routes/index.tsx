@@ -725,7 +725,7 @@ function FinalCTA() {
   return (
     <section className="border-b border-border">
       <div className="container-editorial py-20 text-center md:py-28">
-        <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-swiss-red">— Hablemos</span>
+        <span className="text-[11px] font-semibold uppercase tracking-[0.24em]"><span className="text-swiss-red">—</span> <span className="text-emerald-600">Hablemos</span></span>
         <h2 className="mx-auto mt-6 max-w-[18ch] text-[32px] font-bold leading-[1] tracking-tighter md:text-[64px]">
           ¿Dónde esquiás?
         </h2>
