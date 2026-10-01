@@ -249,7 +249,7 @@ function HowToBuy() {
               {"\n"}
             </h2>
             <p className="mt-4 max-w-[52ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[16px]">
-              {"Elegí tus productos y envianos tu pedido por WhatsApp.\n+41 78 23 77 330\n+54 9 221 505 6196"}
+              {"Elegí tus productos y envianos tu pedido por WhatsApp.\n+41 78 23 77 330 // +54 9 221 505 6196"}
             </p>
           </div>
           <a
