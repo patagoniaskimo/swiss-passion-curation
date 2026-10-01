@@ -88,7 +88,7 @@ function Nav() {
         <a href="#top" className="flex items-baseline gap-2">
           <span className="text-[15px] font-bold tracking-tighter">Patagonia Skimo</span>
           <span className="hidden text-[11px] uppercase tracking-[0.16em] text-muted-foreground sm:inline">
-            DESDE SUIZA
+            DESDE SUIZA PARA ARGENTINA
           </span>
         </a>
         <nav className="hidden items-center gap-8 md:flex">
