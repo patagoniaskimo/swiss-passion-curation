@@ -755,7 +755,7 @@ function Footer() {
           <div className="col-span-12 md:col-span-6">
             <p className="text-[20px] font-bold tracking-tighter md:text-[24px]">Patagonia Skimo</p>
             <p className="mt-3 text-[12px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              De Suiza. A Argentina. Pasión por la montaña.
+              TIENDA ESPECIALIZADA EN SKI DE TRAVESÍA
             </p>
           </div>
           <div className="col-span-12 sm:col-span-6 md:col-span-3">
