@@ -248,9 +248,11 @@ function HowToBuy() {
             <h2 className="text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
               {"\n"}
             </h2>
-            <p className="mt-4 max-w-[52ch] text-[15px] leading-[1.6] text-foreground/75 md:text-[16px]">
-              {"Elegí tus productos y envianos tu pedido por WhatsApp.\n\n+41 78 23 77 330 // +54 9 221 505 6196\n\n El pago se realiza por transferencia en pesos al cambio del día o en dolares."}
-            </p>
+            <div className="mt-4 max-w-[52ch] space-y-4 text-[15px] leading-[1.6] text-foreground/75 md:text-[16px]">
+              <p>Elegí tus productos y envianos tu pedido por WhatsApp.</p>
+              <p>+41 78 23 77 330 // +54 9 221 505 6196</p>
+              <p>El pago se realiza por transferencia en pesos al cambio del día o en dolares.</p>
+            </div>
           </div>
           <a
             href={WHATSAPP_URL}
