@@ -243,12 +243,12 @@ function HowToBuy() {
     <section id="como-comprar" className="border-b border-border bg-secondary">
       <div className="container-editorial py-12 md:py-16">
         <SectionLabel n="III" label="¿CÓMO COMPRAR?" />
-        <div className="mt-6 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div className="mt-6 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-[26px] font-bold leading-[1.05] tracking-tighter md:text-[38px]">
               {"\n"}
             </h2>
-            <div className="mt-4 max-w-[52ch] space-y-4 text-[15px] leading-[1.6] text-foreground/75 md:text-[16px]">
+            <div className="mt-4 max-w-[80ch] space-y-4 text-[15px] leading-[1.6] text-foreground/75 md:text-[16px]">
               <p>Elegí tus productos y envianos tu pedido por WhatsApp.</p>
               <p>+41 78 23 77 330 // +54 9 221 505 6196</p>
               <p>El pago se realiza por transferencia en pesos al cambio del día o en dolares.</p>
