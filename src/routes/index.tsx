@@ -496,7 +496,6 @@ function Products() {
     },
     {
       img: choukaCover,
-      images: [choukaCover, product22],
       cat: "Fijaciones",
       name: "PLUM Chouka",
       stock: "Próximamente",
