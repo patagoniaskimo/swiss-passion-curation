@@ -23,7 +23,6 @@ import product18 from "@/assets/product-18.png";
 import product19 from "@/assets/product-19.png";
 import product20 from "@/assets/product-20.png";
 import product21 from "@/assets/product-21.png";
-import product22 from "@/assets/product-22.png";
 import choukaCover from "@/assets/product-chouka-cover.png";
 import product23 from "@/assets/product-23.png";
 import helmetDetail1 from "@/assets/helmet-0822.jpg";
@@ -496,7 +495,6 @@ function Products() {
     },
     {
       img: choukaCover,
-      images: [choukaCover, product22],
       cat: "Fijaciones",
       name: "PLUM Chouka",
       stock: "Próximamente",
